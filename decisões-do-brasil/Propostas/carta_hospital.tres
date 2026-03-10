@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://coqej3amo5bg3"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_2eflt"]
+
+[resource]
+script = ExtResource("1_2eflt")
+texto = "Um prposta para almentar os impostos"
+impacto_ouro = 20
+impacto_povo = -15

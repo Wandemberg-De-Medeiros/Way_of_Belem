@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://de6yc7atksgwv"]
+
+[ext_resource type="Script" uid="uid://dvsfbqivbqgru" path="res://scripts/MainScene.gd" id="1_d5ttk"]
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="2_0bvrx"]
+[ext_resource type="Resource" uid="uid://cyspdim1r4chk" path="res://Propostas/carta_doacao.tres" id="3_cvv8b"]
+[ext_resource type="Resource" uid="uid://ciunj633iwldr" path="res://Propostas/carta_verba.tres" id="4_8i4ha"]
+[ext_resource type="Resource" uid="uid://lt0vk31y3tei" path="res://Propostas/carta_praça.tres" id="5_2uwyn"]
+
+[node name="Node2D" type="Node2D" unique_id=1318110243]
+scale = Vector2(0.96474093, 0.99386597)
+script = ExtResource("1_d5ttk")
+lista_de_propostas = Array[ExtResource("2_0bvrx")]([ExtResource("3_cvv8b"), ExtResource("4_8i4ha"), ExtResource("5_2uwyn")])
+metadata/_edit_vertical_guides_ = [501.0]
+metadata/_edit_horizontal_guides_ = [320.0]

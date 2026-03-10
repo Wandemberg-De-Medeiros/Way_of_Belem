@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://ciunj633iwldr"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_2eflt"]
+
+[resource]
+script = ExtResource("1_2eflt")
+texto = "O departamento de TI pede verba para atualizar os equipamentos e oferecer melhores serviços a povo"
+impacto_ouro = -30
+impacto_povo = -15

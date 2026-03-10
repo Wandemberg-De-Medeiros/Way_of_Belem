@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://lt0vk31y3tei"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_2eflt"]
+
+[resource]
+script = ExtResource("1_2eflt")
+texto = "Na internet o povo pede por uma nova praça para relaxar e ter onde as crianças brincarem"
+impacto_ouro = -15
+impacto_povo = -15
