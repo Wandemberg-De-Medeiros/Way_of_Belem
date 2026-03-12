@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bj3ptpegsjmm6"]
+
+[ext_resource type="Texture2D" uid="uid://gkkh604jn7ek" path="res://Sprites/icones/factory-0001.png" id="1_r1u02"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_el6ed"]
+
+[node name="icone_industria" type="Area2D" unique_id=613145575]
+scale = Vector2(0.432, 0.432)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1578492647]
+texture = ExtResource("1_r1u02")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1779665515]
+scale = Vector2(1.6481475, 1.6481475)
+shape = SubResource("CircleShape2D_el6ed")

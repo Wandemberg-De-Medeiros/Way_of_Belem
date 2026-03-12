@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cxnr72h7b88w7"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_su5m6"]
+
+[resource]
+script = ExtResource("1_su5m6")
+texto = "Taxar grandes indústrias poluentes?"
+floresta = 10
+industria = -15
+verba = 20
+popularidade = -5

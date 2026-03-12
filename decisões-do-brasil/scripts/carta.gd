@@ -35,11 +35,14 @@ func _input(event):
 func verificar_decisao():
 	if position.x > limite_decisao:
 		decidir("NAO")
+		print("Vc esclheu não ")
 	elif position.x < -limite_decisao:
 		decidir("SIM")
+		print("Vc esclheu sim ")
 
 func configurar(dados: Proposta):
 	$Label.text = dados.texto
+	print("Surgiu nova carta. Verba: ", dados.verba, " | Floresta: ", dados.floresta," | Industria: ", dados.industria, " | Popularidade: ", dados.popularidade, )
 
 func decidir(escolha):
 	set_process_input(false)

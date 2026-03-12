@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://ku6yqunv4q1k"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_4r52f"]
+
+[resource]
+script = ExtResource("1_4r52f")
+texto = "Construir uma serraria na reserva ambiental?"
+floresta = -20
+industria = 15
+verba = 10
+popularidade = -5

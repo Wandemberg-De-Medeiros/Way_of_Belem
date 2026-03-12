@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://begvi3v6tqhrn"]
+
+[ext_resource type="Texture2D" uid="uid://3qucsp8g5qc7" path="res://Sprites/icones/Money-0001.png" id="1_5xv5m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0sarv"]
+
+[node name="icone_verba" type="Area2D" unique_id=1645812455]
+scale = Vector2(0.432, 0.432)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=113142111]
+texture = ExtResource("1_5xv5m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1268115454]
+scale = Vector2(1.600001, 1.600001)
+shape = SubResource("CircleShape2D_0sarv")

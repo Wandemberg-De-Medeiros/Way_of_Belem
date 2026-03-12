@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://ddejd8uur2gvs"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_5l3pb"]
+
+[resource]
+script = ExtResource("1_5l3pb")
+texto = "Investir em reflorestamento comunitário?"
+floresta = 25
+industria = -5
+verba = -15
+popularidade = 10

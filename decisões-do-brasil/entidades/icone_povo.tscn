@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c4fqjsqqoosav"]
+
+[ext_resource type="Texture2D" uid="uid://dvhy1hy3ph4ud" path="res://Sprites/icones/Man-0001.png" id="1_5l02d"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8c081"]
+
+[node name="icone_povo" type="Area2D" unique_id=1028705808]
+scale = Vector2(0.432, 0.432)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=463716760]
+texture = ExtResource("1_5l02d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1710936643]
+scale = Vector2(1.648148, 1.648148)
+shape = SubResource("CircleShape2D_8c081")

@@ -7,13 +7,11 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fp73s"]
 size = Vector2(20, 28.293419)
 
-[node name="Node2D" type="Node2D" unique_id=1317959440]
-metadata/_edit_vertical_guides_ = [580.0]
-metadata/_edit_horizontal_guides_ = [344.0]
+[node name="Carta" type="Node2D" unique_id=1317959440]
+z_index = 2
 
 [node name="Area2D" type="Area2D" parent="." unique_id=810935346]
-position = Vector2(578, 336)
-scale = Vector2(29.802967, 29.802967)
+scale = Vector2(3.8643878, 3.8643878)
 script = ExtResource("1_f10ka")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2109295680]

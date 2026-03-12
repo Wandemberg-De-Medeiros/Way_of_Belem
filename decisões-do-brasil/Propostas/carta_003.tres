@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://bfgtoypgnbh6q"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_5tepw"]
+
+[resource]
+script = ExtResource("1_5tepw")
+texto = "Aumentar subsídios para fábricas de software?"
+industria = 20
+verba = -10
+popularidade = 5

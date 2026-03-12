@@ -4,6 +4,8 @@
 
 [resource]
 script = ExtResource("1_2eflt")
-texto = "Um prposta para almentar os impostos"
-impacto_ouro = 20
-impacto_povo = -15
+texto = "Um prposta para aumentar os impostos"
+floresta = -5
+industria = 5
+verba = 15
+popularidade = -10

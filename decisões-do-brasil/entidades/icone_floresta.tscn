@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c1lhx7ufb0jfd"]
+
+[ext_resource type="Texture2D" uid="uid://ugdbcl0kcmud" path="res://Sprites/icones/Tree-0001.png" id="1_u8bxh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l4jh3"]
+radius = 16.0
+
+[node name="icone_floresta" type="Area2D" unique_id=1983214923]
+scale = Vector2(0.43173772, 0.43173772)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=321698482]
+texture = ExtResource("1_u8bxh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1374800464]
+shape = SubResource("CircleShape2D_l4jh3")

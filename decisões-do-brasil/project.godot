@@ -17,7 +17,16 @@ config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=439
+window/size/viewport_height=255
 window/size/mode=2
+window/size/window_width_override=1152
+window/size/window_height_override=576
+window/stretch/mode="canvas_items"
+
+[editor]
+
+movie_writer/movie_file="C:/Users/Usuario/OneDrive/Documentos/#jogos godot/Decisoes_do_Brasil/decisões-do-brasil/video/prototipo.avi"
 
 [physics]
 

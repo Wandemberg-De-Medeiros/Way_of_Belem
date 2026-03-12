@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://beq2cx0rscw6n"]
+
+[ext_resource type="Texture2D" uid="uid://c7m7kkxyrww43" path="res://Sprites/icones/engrenagem.png" id="1_85t25"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bpmrn"]
+
+[node name="icone_config" type="Area2D" unique_id=827921854]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=938451606]
+texture = ExtResource("1_85t25")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=969852394]
+scale = Vector2(1.4444087, 1.4444087)
+shape = SubResource("CircleShape2D_bpmrn")
