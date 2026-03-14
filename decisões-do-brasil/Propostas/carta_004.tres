@@ -1,11 +1,23 @@
-[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cxnr72h7b88w7"]
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://lqywqnqs3k2p"]
 
 [ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_su5m6"]
 
 [resource]
 script = ExtResource("1_su5m6")
-texto = "Taxar grandes indústrias poluentes?"
-floresta = 10
-industria = -15
-verba = 20
-popularidade = -5
+id = "004"
+texto_proposta = "Crise energética iminente. Qual fonte priorizar?"
+texto_opc1 = "Energia Solar"
+opc1_floresta = 5
+opc1_industria = 10
+opc1_verba = -30
+opc1_popularidade = 10
+texto_opc2 = "Hidrelétricas"
+opc2_floresta = -20
+opc2_industria = 15
+opc2_verba = -10
+opc2_popularidade = 5
+texto_opc3 = "Termelétricas (Carvão)"
+opc3_floresta = -40
+opc3_industria = 25
+opc3_verba = 10
+opc3_popularidade = -5

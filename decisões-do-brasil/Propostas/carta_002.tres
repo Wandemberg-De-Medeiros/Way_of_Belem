@@ -1,11 +1,22 @@
-[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://ddejd8uur2gvs"]
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cn1vwlvw5xdf5"]
 
 [ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_5l3pb"]
 
 [resource]
 script = ExtResource("1_5l3pb")
-texto = "Investir em reflorestamento comunitário?"
-floresta = 25
-industria = -5
-verba = -15
-popularidade = 10
+id = "002"
+texto_proposta = "O povo exige mais empregos na indústria pesada. Como reagir?"
+texto_opc1 = "Focar em TI (Verde)"
+opc1_floresta = 5
+opc1_industria = 5
+opc1_verba = -20
+opc1_popularidade = 5
+texto_opc2 = "Abrir Fábricas"
+opc2_floresta = -20
+opc2_industria = 25
+opc2_verba = 15
+opc2_popularidade = 20
+texto_opc3 = "Ignorar"
+opc3_industria = -10
+opc3_verba = 5
+opc3_popularidade = -25

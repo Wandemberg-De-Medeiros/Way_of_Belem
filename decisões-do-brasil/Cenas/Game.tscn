@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://de6yc7atksgwv"]
 
 [ext_resource type="Script" uid="uid://dvsfbqivbqgru" path="res://scripts/MainScene.gd" id="1_d5ttk"]
+[ext_resource type="PackedScene" uid="uid://25x4pwlevf6g" path="res://entidades/secretaria.tscn" id="2_cht1d"]
 [ext_resource type="PackedScene" uid="uid://bj3ptpegsjmm6" path="res://entidades/icone_industria.tscn" id="6_8i4ha"]
 [ext_resource type="PackedScene" uid="uid://c1lhx7ufb0jfd" path="res://entidades/icone_floresta.tscn" id="6_cvv8b"]
 [ext_resource type="PackedScene" uid="uid://begvi3v6tqhrn" path="res://entidades/icone_verba.tscn" id="8_2uwyn"]
@@ -12,24 +13,6 @@
 [node name="Node2D" type="Node2D" unique_id=1318110243]
 scale = Vector2(0.96474093, 0.99386597)
 script = ExtResource("1_d5ttk")
-
-[node name="Label" type="Label" parent="." unique_id=1381888863]
-z_index = 1
-offset_left = 44.57155
-offset_top = 110.67892
-offset_right = 73.57155
-offset_bottom = 133.67892
-scale = Vector2(1.1784837, 1.1784837)
-text = "Sim"
-
-[node name="Label2" type="Label" parent="." unique_id=93603791]
-z_index = 1
-offset_left = 380.41302
-offset_top = 113.697426
-offset_right = 412.41302
-offset_bottom = 136.69742
-scale = Vector2(1.1784837, 1.1784837)
-text = "Não"
 
 [node name="icones" type="Node" parent="." unique_id=1345826110]
 
@@ -59,5 +42,8 @@ position = Vector2(422, 16)
 texture = ExtResource("11_rdjek")
 centered = false
 
-[node name="Node" type="Node" parent="." unique_id=1818185511]
+[node name="fabrica" type="Node" parent="." unique_id=1818185511]
 script = ExtResource("13_lx5o4")
+
+[node name="Secretaria" parent="." unique_id=1352217106 instance=ExtResource("2_cht1d")]
+position = Vector2(324.43942, 149.9196)

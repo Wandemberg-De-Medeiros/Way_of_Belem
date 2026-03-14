@@ -12,6 +12,8 @@ func carregar_todas_as_cartas_da_pasta():
 	var caminho = "res://Propostas/"
 	var dir = DirAccess.open(caminho)
 	
+	lista_de_propostas.clear() # Limpa para garantir que só entram as novas
+	
 	if dir:
 		dir.list_dir_begin()
 		var nome_arquivo = dir.get_next()
@@ -36,6 +38,11 @@ func embaralhar_cartas():
 
 #responsavel por chamar a proxima carta da lista
 func proxima_carta():
+	
+	if lista_de_propostas.is_empty():
+		print("Lista vazia! Gerando aviso...")
+		return
+		
 	if lista_de_propostas.size() > 0:
 		var dados = lista_de_propostas.pop_front()
 		var instancia_cena = cena_da_carta.instantiate()
@@ -43,7 +50,7 @@ func proxima_carta():
 		add_child(instancia_cena)
 		
 		# Define a posição exata da carta
-		instancia_cena.global_position = Vector2(219.5, 127.5)
+		#instancia_cena.global_position = Vector2(219.5, 127.5)
 		
 		# Acessa a Area2D para configurar o texto
 		var area_carta = instancia_cena.get_node("Area2D")

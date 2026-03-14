@@ -3,14 +3,26 @@
 [ext_resource type="Script" uid="uid://brsidssu0xyjg" path="res://scripts/carta.gd" id="1_f10ka"]
 [ext_resource type="Texture2D" uid="uid://dj1mbkdrcikvy" path="res://Sprites/Cards(Cartas)/Battery/BatteryUnit [0 Start].png" id="2_7hbrk"]
 [ext_resource type="LabelSettings" uid="uid://bdwir5yl2a0fu" path="res://entidades/config_texto_carta.tres" id="2_f3lc6"]
+[ext_resource type="Script" uid="uid://vy2urbmwow43" path="res://scripts/opção_1.gd" id="4_kks8w"]
+[ext_resource type="Script" uid="uid://c4p3ivhcouo24" path="res://scripts/opção_2.gd" id="5_ns5m3"]
+[ext_resource type="Script" uid="uid://cfdgvimc7q58k" path="res://scripts/opção_3.gd" id="6_yw1um"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fp73s"]
 size = Vector2(20, 28.293419)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_kks8w"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ns5m3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yw1um"]
+
 [node name="Carta" type="Node2D" unique_id=1317959440]
 z_index = 2
+metadata/_edit_vertical_guides_ = [219.0]
+metadata/_edit_horizontal_guides_ = [127.0]
 
 [node name="Area2D" type="Area2D" parent="." unique_id=810935346]
+position = Vector2(219, 126)
 scale = Vector2(3.8643878, 3.8643878)
 script = ExtResource("1_f10ka")
 
@@ -32,7 +44,67 @@ vertical_alignment = 1
 autowrap_mode = 3
 autowrap_trim_flags = 0
 justification_flags = 171
+metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=902170635]
 scale = Vector2(0.04491, 0.04491)
 texture = ExtResource("2_7hbrk")
+
+[node name="opção_1" type="Node" parent="." unique_id=1727177174]
+
+[node name="Area2D" type="Area2D" parent="opção_1" unique_id=1797703044]
+z_index = 2
+position = Vector2(197, 165)
+script = ExtResource("4_kks8w")
+
+[node name="Sprite2D" type="Sprite2D" parent="opção_1/Area2D" unique_id=1754163371]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="opção_1/Area2D" unique_id=78719276]
+shape = SubResource("CircleShape2D_kks8w")
+
+[node name="Label" type="Label" parent="opção_1/Area2D" unique_id=1619264850]
+offset_left = -7.0
+offset_top = -6.0
+offset_right = 74.483765
+offset_bottom = 64.6192
+scale = Vector2(0.18408589, 0.18408589)
+
+[node name="opção_2" type="Node" parent="." unique_id=1649608807]
+
+[node name="Area2D" type="Area2D" parent="opção_2" unique_id=643721426]
+z_index = 2
+position = Vector2(218, 165)
+script = ExtResource("5_ns5m3")
+
+[node name="Sprite2D" type="Sprite2D" parent="opção_2/Area2D" unique_id=1907203798]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="opção_2/Area2D" unique_id=641560274]
+shape = SubResource("CircleShape2D_ns5m3")
+debug_color = Color(0.3356956, 0.6225352, 1.92523e-07, 0.41960785)
+
+[node name="Label" type="Label" parent="opção_2/Area2D" unique_id=1563643770]
+offset_left = -7.0
+offset_top = -6.0
+offset_right = 74.483765
+offset_bottom = 64.6192
+scale = Vector2(0.18408589, 0.18408589)
+
+[node name="opção_3" type="Node" parent="." unique_id=1819125818]
+
+[node name="Area2D" type="Area2D" parent="opção_3" unique_id=1688897228]
+z_index = 2
+position = Vector2(241, 165)
+script = ExtResource("6_yw1um")
+
+[node name="Sprite2D" type="Sprite2D" parent="opção_3/Area2D" unique_id=780083671]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="opção_3/Area2D" unique_id=2102653636]
+shape = SubResource("CircleShape2D_yw1um")
+debug_color = Color(0.975148, 0.15956768, 0, 0.41960785)
+
+[node name="Label" type="Label" parent="opção_3/Area2D" unique_id=880608591]
+offset_left = -7.0
+offset_top = -6.0
+offset_right = 74.483765
+offset_bottom = 64.6192
+scale = Vector2(0.18408589, 0.18408589)

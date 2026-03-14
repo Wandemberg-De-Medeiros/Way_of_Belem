@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://bu2eu8tgofce2"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_cp5rh"]
+
+[resource]
+script = ExtResource("1_cp5rh")
+id = "006"
+texto_proposta = "Investidores estrangeiros querem construir um mega-porto."
+texto_opc1 = "Rejeitar (Eco)"
+opc1_floresta = 10
+opc1_industria = -15
+opc1_verba = -10
+opc1_popularidade = -5
+texto_opc2 = "Licença Restrita"
+opc2_floresta = -5
+opc2_industria = 10
+opc2_verba = 15
+opc2_popularidade = 5
+texto_opc3 = "Licença Livre"
+opc3_floresta = -30
+opc3_industria = 30
+opc3_verba = 40
+opc3_popularidade = 10

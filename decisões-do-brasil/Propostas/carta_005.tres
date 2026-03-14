@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://bj6lon6sukpr6"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_uivrk"]
+
+[resource]
+script = ExtResource("1_uivrk")
+id = "005"
+texto_proposta = "Movimentos sociais pedem demarcação de terras protegidas."
+texto_opc1 = "Demarcar Tudo"
+opc1_floresta = 25
+opc1_industria = -20
+opc1_verba = -5
+opc1_popularidade = 15
+texto_opc2 = "Demarcar Parte"
+opc2_floresta = 10
+opc2_industria = -5
+opc2_popularidade = 5
+texto_opc3 = "Priorizar Indústria"
+opc3_floresta = -25
+opc3_industria = 20
+opc3_verba = 15
+opc3_popularidade = -20

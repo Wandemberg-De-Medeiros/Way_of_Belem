@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://tifyvj53kk1p"]
+
+[ext_resource type="Script" uid="uid://cfdgvimc7q58k" path="res://scripts/opção_3.gd" id="1_20gc0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_863ud"]
+
+[node name="opção_3" type="Node2D" unique_id=882321368]
+script = ExtResource("1_20gc0")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=961013560]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=43924749]
+shape = SubResource("CapsuleShape2D_863ud")
+debug_color = Color(0.2102083, 0.64035165, 0, 0.41960785)
+
+[node name="Label" type="Label" parent="Area2D" unique_id=95187258]
+offset_right = 40.0
+offset_bottom = 23.0

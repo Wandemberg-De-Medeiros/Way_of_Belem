@@ -1,53 +1,36 @@
 extends Area2D
 
-var arrastando = false
-var posicao_inicial = Vector2.ZERO
-var limite_decisao = 150 
-
-func _ready():
-	# Forçamos a posição local a zero para alinhar com o pai Node2D
-	position = Vector2.ZERO
-	posicao_inicial = position
-
-func _input_event(_viewport, event, _shape_idx):
-	if event is InputEventMouseButton:
-		if event.button_index == MOUSE_BUTTON_LEFT:
-			arrastando = event.pressed
-
-func _process(_delta):
-	if arrastando:
-		# Calculamos o deslocamento baseado no mouse global em relação ao pai
-		var mouse_x = get_global_mouse_position().x
-		position.x = mouse_x - get_parent().global_position.x
-		
-		# Rotação baseada no deslocamento
-		rotation_degrees = position.x * 0.1
-	else:
-		# Volta para o centro (0,0) relativo ao pai
-		position.x = lerp(position.x, 0.0, 0.2)
-		rotation_degrees = lerp(rotation_degrees, 0.0, 0.2)
-
-func _input(event):
-	if event is InputEventMouseButton and not event.pressed and arrastando:
-		arrastando = false
-		verificar_decisao()
-
-func verificar_decisao():
-	if position.x > limite_decisao:
-		decidir("NAO")
-		print("Vc esclheu não ")
-	elif position.x < -limite_decisao:
-		decidir("SIM")
-		print("Vc esclheu sim ")
+# Referências baseadas na sua imagem
+# No topo do carta.gd
+@onready var label_proposta = $Label
+@onready var area_opc1 = get_node("../opção_1/Area2D")
+@onready var area_opc2 = get_node("../opção_2/Area2D")
+@onready var area_opc3 = get_node("../opção_3/Area2D")
 
 func configurar(dados: Proposta):
-	$Label.text = dados.texto
-	print("Surgiu nova carta. Verba: ", dados.verba, " | Floresta: ", dados.floresta," | Industria: ", dados.industria, " | Popularidade: ", dados.popularidade, )
-
-func decidir(escolha):
-	set_process_input(false)
-	var tween = create_tween()
-	var direcao = -1200 if escolha == "SIM" else 1200
+	if dados == null: return
 	
-	tween.tween_property(self, "position:x", direcao, 0.4).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_IN)
-	tween.finished.connect(get_parent().queue_free) # Deleta o Node2D pai também
+	label_proposta.text = dados.texto_proposta
+	
+	# Configura cada sub-entidade
+	area_opc1.configurar_opcao(dados.texto_opc1, dados.opc1_floresta, dados.opc1_industria, dados.opc1_verba, dados.opc1_popularidade)
+	area_opc2.configurar_opcao(dados.texto_opc2, dados.opc2_floresta, dados.opc2_industria, dados.opc2_verba, dados.opc2_popularidade)
+	area_opc3.configurar_opcao(dados.texto_opc3, dados.opc3_floresta, dados.opc3_industria, dados.opc3_verba, dados.opc3_popularidade)
+	
+	# Conecta os sinais de clique
+	if not area_opc1.is_connected("escolhida", _ao_escolher_opcao):
+		area_opc1.escolhida.connect(_ao_escolher_opcao)
+		area_opc2.escolhida.connect(_ao_escolher_opcao)
+		area_opc3.escolhida.connect(_ao_escolher_opcao)
+
+func _ao_escolher_opcao(impactos: Dictionary):
+	print("Opção clicada! Impactos: ", impactos)
+	# Aqui você atualizará as barras de status globais futuramente
+	animar_saida()
+
+func animar_saida():
+	var tween = create_tween()
+	# Animação simples: a carta e as opções somem
+	tween.tween_property(get_parent(), "modulate:a", 0, 0.4)
+	tween.finished.connect(func(): get_parent().queue_free())
+	
