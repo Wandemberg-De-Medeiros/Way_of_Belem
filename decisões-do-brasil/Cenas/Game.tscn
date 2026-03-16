@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://25x4pwlevf6g" path="res://entidades/secretaria.tscn" id="2_cht1d"]
 [ext_resource type="PackedScene" uid="uid://bj3ptpegsjmm6" path="res://entidades/icone_industria.tscn" id="6_8i4ha"]
 [ext_resource type="PackedScene" uid="uid://c1lhx7ufb0jfd" path="res://entidades/icone_floresta.tscn" id="6_cvv8b"]
+[ext_resource type="Script" uid="uid://bebqcb0fmskm8" path="res://scripts/interface_status.gd" id="6_uspeq"]
 [ext_resource type="PackedScene" uid="uid://begvi3v6tqhrn" path="res://entidades/icone_verba.tscn" id="8_2uwyn"]
 [ext_resource type="PackedScene" uid="uid://c4fqjsqqoosav" path="res://entidades/icone_povo.tscn" id="9_cht1d"]
 [ext_resource type="PackedScene" uid="uid://beq2cx0rscw6n" path="res://entidades/icone_config.tscn" id="10_uspeq"]
@@ -15,24 +16,6 @@ scale = Vector2(0.96474093, 0.99386597)
 script = ExtResource("1_d5ttk")
 
 [node name="icones" type="Node" parent="." unique_id=1345826110]
-
-[node name="icone_industria" parent="icones" unique_id=613145575 instance=ExtResource("6_8i4ha")]
-z_index = 1
-position = Vector2(32, 15)
-scale = Vector2(0.4167681, 0.4293501)
-
-[node name="icone_floresta" parent="icones" unique_id=1983214923 instance=ExtResource("6_cvv8b")]
-z_index = 1
-position = Vector2(13.000002, 15.000004)
-scale = Vector2(0.41651505, 0.42908943)
-
-[node name="icone_verba" parent="icones" unique_id=1645812455 instance=ExtResource("8_2uwyn")]
-z_index = 1
-position = Vector2(51, 15)
-
-[node name="icone_povo" parent="icones" unique_id=1028705808 instance=ExtResource("9_cht1d")]
-z_index = 1
-position = Vector2(70.00001, 15)
 
 [node name="icone_config" parent="icones" unique_id=827921854 instance=ExtResource("10_uspeq")]
 z_index = 1
@@ -47,3 +30,28 @@ script = ExtResource("13_lx5o4")
 
 [node name="Secretaria" parent="." unique_id=1352217106 instance=ExtResource("2_cht1d")]
 position = Vector2(324.43942, 149.9196)
+
+[node name="InterfaceStatus" type="HBoxContainer" parent="." unique_id=1419972381]
+offset_right = 88.10655
+offset_bottom = 29.178984
+script = ExtResource("6_uspeq")
+
+[node name="icone_industria" parent="InterfaceStatus" unique_id=613145575 instance=ExtResource("6_8i4ha")]
+z_index = 1
+position = Vector2(33.169525, 15.092577)
+scale = Vector2(0.432, 0.43199998)
+
+[node name="icone_floresta" parent="InterfaceStatus" unique_id=1983214923 instance=ExtResource("6_cvv8b")]
+z_index = 1
+position = Vector2(13.4751215, 15.092581)
+scale = Vector2(0.4317377, 0.4317377)
+
+[node name="icone_verba" parent="InterfaceStatus" unique_id=1645812455 instance=ExtResource("8_2uwyn")]
+z_index = 1
+position = Vector2(52.86393, 15.092577)
+scale = Vector2(0.4477886, 0.43466625)
+
+[node name="icone_povo" parent="InterfaceStatus" unique_id=1028705808 instance=ExtResource("9_cht1d")]
+z_index = 1
+position = Vector2(72.55834, 15.092577)
+scale = Vector2(0.4477886, 0.43466625)

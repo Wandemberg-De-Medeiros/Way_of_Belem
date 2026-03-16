@@ -68,6 +68,7 @@ offset_top = -6.0
 offset_right = 74.483765
 offset_bottom = 64.6192
 scale = Vector2(0.18408589, 0.18408589)
+autowrap_mode = 3
 
 [node name="opção_2" type="Node" parent="." unique_id=1649608807]
 
@@ -88,6 +89,7 @@ offset_top = -6.0
 offset_right = 74.483765
 offset_bottom = 64.6192
 scale = Vector2(0.18408589, 0.18408589)
+autowrap_mode = 3
 
 [node name="opção_3" type="Node" parent="." unique_id=1819125818]
 
@@ -108,3 +110,4 @@ offset_top = -6.0
 offset_right = 74.483765
 offset_bottom = 64.6192
 scale = Vector2(0.18408589, 0.18408589)
+autowrap_mode = 3

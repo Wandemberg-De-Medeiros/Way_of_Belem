@@ -13,3 +13,11 @@ texture = ExtResource("1_r1u02")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1779665515]
 scale = Vector2(1.6481475, 1.6481475)
 shape = SubResource("CircleShape2D_el6ed")
+
+[node name="Valor" type="Label" parent="." unique_id=1116438784]
+offset_left = -16.214
+offset_top = 16.214
+offset_right = 40.496998
+offset_bottom = 39.214005
+scale = Vector2(0.572, 0.572)
+autowrap_mode = 3

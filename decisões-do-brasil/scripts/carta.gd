@@ -24,8 +24,14 @@ func configurar(dados: Proposta):
 		area_opc3.escolhida.connect(_ao_escolher_opcao)
 
 func _ao_escolher_opcao(impactos: Dictionary):
-	print("Opção clicada! Impactos: ", impactos)
-	# Aqui você atualizará as barras de status globais futuramente
+	# Envia os valores para o GameManager processar
+	GameManager.aplicar_mudancas(
+		impactos.floresta, 
+		impactos.industria, 
+		impactos.verba, 
+		impactos.popularidade
+	)
+	
 	animar_saida()
 
 func animar_saida():
