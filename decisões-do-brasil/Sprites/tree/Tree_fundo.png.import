@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gkkh604jn7ek"
-path="res://.godot/imported/factory-0001.png-eddcc027b241cdd6801d73f338b7f102.ctex"
+uid="uid://nlxqnxnnqbn"
+path="res://.godot/imported/Tree_fundo.png-20ff95f095a6545d911f13f3bc87dd48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/icones/factory-0001.png"
-dest_files=["res://.godot/imported/factory-0001.png-eddcc027b241cdd6801d73f338b7f102.ctex"]
+source_file="res://Sprites/tree/Tree_fundo.png"
+dest_files=["res://.godot/imported/Tree_fundo.png-20ff95f095a6545d911f13f3bc87dd48.ctex"]
 
 [params]
 

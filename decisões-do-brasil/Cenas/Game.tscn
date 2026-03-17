@@ -32,8 +32,13 @@ script = ExtResource("13_lx5o4")
 position = Vector2(324.43942, 149.9196)
 
 [node name="InterfaceStatus" type="HBoxContainer" parent="." unique_id=1419972381]
-offset_right = 88.10655
-offset_bottom = 29.178984
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.4367187, 1.4367187)
 script = ExtResource("6_uspeq")
 
 [node name="icone_industria" parent="InterfaceStatus" unique_id=613145575 instance=ExtResource("6_8i4ha")]

@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dugbqhi3luteg"]
+
+[ext_resource type="Script" uid="uid://be3xci8b8ry6w" path="res://scripts/game_over.gd" id="1_7y2ld"]
+[ext_resource type="Texture2D" uid="uid://doyfwkdjiip03" path="res://Sprites/EscritorioDoPlayerWIP.png" id="1_18dpl"]
+[ext_resource type="PackedScene" uid="uid://25x4pwlevf6g" path="res://entidades/secretaria.tscn" id="3_glpug"]
+
+[node name="GameOver" type="CanvasLayer" unique_id=1551863065]
+script = ExtResource("1_7y2ld")
+
+[node name="Fundo" type="TextureRect" parent="." unique_id=1573159752]
+offset_right = 455.0
+offset_bottom = 256.0
+scale = Vector2(0.96489865, 0.99472505)
+texture = ExtResource("1_18dpl")
+
+[node name="Label" type="Label" parent="." unique_id=970019884]
+offset_left = 87.00001
+offset_top = 129.0
+offset_right = 306.0
+offset_bottom = 152.0
+scale = Vector2(1.2767266, 1.2767266)
+text = "VOCÊ PERDEU ESSA BUDEGA"
+
+[node name="BotãoReiniciar" type="Button" parent="." unique_id=556642598]
+offset_left = 143.0
+offset_top = 166.0
+offset_right = 388.0
+offset_bottom = 197.0
+scale = Vector2(0.759048, 0.759048)
+text = "Tomar açaí e tenta novamente"
+
+[node name="BotãoMenu" type="Button" parent="." unique_id=219209658]
+offset_left = 183.0
+offset_top = 196.0
+offset_right = 318.0
+offset_bottom = 227.0
+scale = Vector2(0.74704456, 0.74704456)
+text = "Voltar pro menu"
+
+[node name="Secretaria" parent="." unique_id=1352217106 instance=ExtResource("3_glpug")]
+position = Vector2(64.00001, 145.00002)
+scale = Vector2(1.7316881, 1.7316881)
+
+[connection signal="pressed" from="BotãoReiniciar" to="." method="_on_botão_reiniciar_pressed"]
+[connection signal="pressed" from="BotãoMenu" to="." method="_on_botão_menu_pressed"]

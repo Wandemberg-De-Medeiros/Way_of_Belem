@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3qucsp8g5qc7"
-path="res://.godot/imported/Money-0001.png-0da27b4fc27061cb48f3f567d36082b7.ctex"
+uid="uid://br5a2j8qa2uej"
+path="res://.godot/imported/Money_progress.png-a33cf275d17955d06419450fb5bed037.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/icones/Money-0001.png"
-dest_files=["res://.godot/imported/Money-0001.png-0da27b4fc27061cb48f3f567d36082b7.ctex"]
+source_file="res://Sprites/money/Money_progress.png"
+dest_files=["res://.godot/imported/Money_progress.png-a33cf275d17955d06419450fb5bed037.ctex"]
 
 [params]
 

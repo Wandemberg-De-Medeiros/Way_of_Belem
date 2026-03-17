@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ugdbcl0kcmud"
-path="res://.godot/imported/Tree-0001.png-2b2bc2178f875bc62216d09c13fdf21c.ctex"
+uid="uid://e4tfvaxu310l"
+path="res://.godot/imported/Tree_progress.png-c760248afd7a570af97bd948ae8243ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/icones/Tree-0001.png"
-dest_files=["res://.godot/imported/Tree-0001.png-2b2bc2178f875bc62216d09c13fdf21c.ctex"]
+source_file="res://Sprites/factory/Tree_progress.png"
+dest_files=["res://.godot/imported/Tree_progress.png-c760248afd7a570af97bd948ae8243ad.ctex"]
 
 [params]
 

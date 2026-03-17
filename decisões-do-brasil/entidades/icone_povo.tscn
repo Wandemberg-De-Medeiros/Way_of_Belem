@@ -1,23 +1,35 @@
 [gd_scene format=3 uid="uid://c4fqjsqqoosav"]
 
-[ext_resource type="Texture2D" uid="uid://dvhy1hy3ph4ud" path="res://Sprites/icones/Man-0001.png" id="1_5l02d"]
+[ext_resource type="Texture2D" uid="uid://dicmud31ymvks" path="res://Sprites/popularidade/Popularidade_fundo.png" id="1_ubqey"]
+[ext_resource type="Texture2D" uid="uid://dqtcfb8aeit3f" path="res://Sprites/popularidade/popularidade_sobrepossicao.png" id="2_vg8v1"]
+[ext_resource type="Texture2D" uid="uid://cftdsafa55t8k" path="res://Sprites/popularidade/Popularidade_progresso.png" id="3_my0ae"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8c081"]
 
 [node name="icone_povo" type="Area2D" unique_id=1028705808]
 scale = Vector2(0.432, 0.432)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=463716760]
-texture = ExtResource("1_5l02d")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1710936643]
+visible = false
 scale = Vector2(1.648148, 1.648148)
 shape = SubResource("CircleShape2D_8c081")
 
 [node name="Valor" type="Label" parent="." unique_id=502031958]
+visible = false
 offset_left = -16.214
 offset_top = 16.214
 offset_right = 40.496998
 offset_bottom = 39.214005
 scale = Vector2(0.572, 0.572)
 autowrap_mode = 3
+
+[node name="BarraProgresso" type="TextureProgressBar" parent="." unique_id=1196953281]
+offset_left = -16.203703
+offset_top = -16.203703
+offset_right = 16.203703
+offset_bottom = 16.203703
+value = 50.0
+fill_mode = 3
+texture_under = ExtResource("1_ubqey")
+texture_over = ExtResource("2_vg8v1")
+texture_progress = ExtResource("3_my0ae")

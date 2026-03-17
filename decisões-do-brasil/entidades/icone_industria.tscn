@@ -1,23 +1,35 @@
 [gd_scene format=3 uid="uid://bj3ptpegsjmm6"]
 
-[ext_resource type="Texture2D" uid="uid://gkkh604jn7ek" path="res://Sprites/icones/factory-0001.png" id="1_r1u02"]
+[ext_resource type="Texture2D" uid="uid://dur3qmqo1d7ci" path="res://Sprites/factory/Factory_fundo.png" id="1_86qjp"]
+[ext_resource type="Texture2D" uid="uid://csk5wyls1ftrq" path="res://Sprites/factory/Factory_sobrpssicao.png" id="2_p5qtd"]
+[ext_resource type="Texture2D" uid="uid://e4tfvaxu310l" path="res://Sprites/factory/Tree_progress.png" id="3_w4k0j"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_el6ed"]
 
 [node name="icone_industria" type="Area2D" unique_id=613145575]
 scale = Vector2(0.432, 0.432)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1578492647]
-texture = ExtResource("1_r1u02")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1779665515]
+visible = false
 scale = Vector2(1.6481475, 1.6481475)
 shape = SubResource("CircleShape2D_el6ed")
 
 [node name="Valor" type="Label" parent="." unique_id=1116438784]
+visible = false
 offset_left = -16.214
 offset_top = 16.214
 offset_right = 40.496998
 offset_bottom = 39.214005
 scale = Vector2(0.572, 0.572)
 autowrap_mode = 3
+
+[node name="BarraProgresso" type="TextureProgressBar" parent="." unique_id=1781422506]
+offset_left = -16.203703
+offset_top = -16.203703
+offset_right = 16.203703
+offset_bottom = 16.203703
+value = 50.0
+fill_mode = 3
+texture_under = ExtResource("1_86qjp")
+texture_over = ExtResource("2_p5qtd")
+texture_progress = ExtResource("3_w4k0j")

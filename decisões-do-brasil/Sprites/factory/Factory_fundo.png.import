@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvhy1hy3ph4ud"
-path="res://.godot/imported/Man-0001.png-8af3f41e83d8e53e19893052b41099b3.ctex"
+uid="uid://dur3qmqo1d7ci"
+path="res://.godot/imported/Factory_fundo.png-594b0e60ee9646b2aeacb89901527080.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/icones/Man-0001.png"
-dest_files=["res://.godot/imported/Man-0001.png-8af3f41e83d8e53e19893052b41099b3.ctex"]
+source_file="res://Sprites/factory/Factory_fundo.png"
+dest_files=["res://.godot/imported/Factory_fundo.png-594b0e60ee9646b2aeacb89901527080.ctex"]
 
 [params]
 
