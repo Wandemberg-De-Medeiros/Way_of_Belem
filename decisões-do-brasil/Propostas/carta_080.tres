@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cqrl2qusj1jpj"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_rkxyf"]
+
+[resource]
+script = ExtResource("1_rkxyf")
+id = "080"
+texto_proposta = "Poluição Sonora: Ruído excessivo em áreas residenciais."
+texto_opc1 = "Fiscalização rigorosa."
+opc1_industria = -20
+opc1_popularidade = 20
+texto_opc2 = "Zonas de silêncio."
+opc2_industria = -10
+opc2_popularidade = 10
+texto_opc3 = "Liberar ruído."
+opc3_industria = 20
+opc3_popularidade = -20

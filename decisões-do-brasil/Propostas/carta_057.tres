@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://dg7s5sy3un5am"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_vquar"]
+
+[resource]
+script = ExtResource("1_vquar")
+id = "057"
+texto_proposta = "Estacionamento Rotativo (Privado): Empresa quer explorar zona azul."
+texto_opc1 = "Conceder exploração total."
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Conceder apenas em ruas específicas."
+opc2_industria = 10
+opc2_verba = -10
+texto_opc3 = "Manter gestão pública."
+opc3_industria = -20
+opc3_verba = 20

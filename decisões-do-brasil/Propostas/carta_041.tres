@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://dejb4webshomv"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_upvjo"]
+
+[resource]
+script = ExtResource("1_upvjo")
+id = "041"
+texto_proposta = "Zona Industrial: Empresas querem expandir a área."
+texto_opc1 = "Liberar nova zona industrial."
+opc1_floresta = -20
+opc1_industria = 20
+texto_opc2 = "Expandir área existente."
+opc2_floresta = -10
+opc2_industria = 10
+texto_opc3 = "Manter limites atuais."
+opc3_floresta = 10
+opc3_industria = -20

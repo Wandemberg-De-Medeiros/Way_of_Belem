@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://5wbthsrobavg"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_ddk0b"]
+
+[resource]
+script = ExtResource("1_ddk0b")
+id = "093"
+texto_proposta = "Digitalização: Processos manuais e burocráticos estão atrasando o desenvolvimento."
+texto_opc1 = "Digitalizar todos os setores."
+opc1_industria = -20
+opc1_verba = 20
+texto_opc2 = "Digitalizar setores chave."
+opc2_industria = -10
+opc2_verba = 10
+texto_opc3 = "Manter manual."
+opc3_industria = 10
+opc3_verba = -20

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://dv5mkak6thv7e"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_dewp4"]
+
+[resource]
+script = ExtResource("1_dewp4")
+id = "099"
+texto_proposta = "Auditoria Externa: Transparência internacional."
+texto_opc1 = "Contratar auditoria global."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Auditoria nacional."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Não auditar."
+opc3_verba = 10
+opc3_popularidade = -20

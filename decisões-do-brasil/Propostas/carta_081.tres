@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://28ijwxs3h6fn"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_mwsmk"]
+
+[resource]
+script = ExtResource("1_mwsmk")
+id = "081"
+texto_proposta = "Salário dos Servidores: Os funcionários estão pedindo reajuste salarial."
+texto_opc1 = "Aumentar salário em 10%."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Aumentar apenas benefícios."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Manter salário atual."
+opc3_verba = 20
+opc3_popularidade = -20

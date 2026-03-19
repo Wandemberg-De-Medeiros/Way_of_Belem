@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://yap557jrvax5"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_h4gl1"]
+
+[resource]
+script = ExtResource("1_h4gl1")
+id = "061"
+texto_proposta = "Igarapés Urbanos: Os igarapés estão poluídos."
+texto_opc1 = "Projeto completo de despoluição."
+opc1_floresta = 20
+opc1_verba = -20
+texto_opc2 = "Limpeza parcial."
+opc2_floresta = 10
+opc2_verba = -10
+texto_opc3 = "Não investir."
+opc3_floresta = -20
+opc3_verba = 10

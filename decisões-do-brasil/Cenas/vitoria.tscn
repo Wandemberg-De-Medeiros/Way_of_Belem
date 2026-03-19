@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cl10803rxanbk"]
+
+[ext_resource type="Script" uid="uid://dg474os3swwp2" path="res://scripts/vitoria.gd" id="1_ebhb3"]
+[ext_resource type="Texture2D" uid="uid://doyfwkdjiip03" path="res://Sprites/EscritorioDoPlayerWIP.png" id="1_xnanc"]
+[ext_resource type="PackedScene" uid="uid://25x4pwlevf6g" path="res://entidades/secretaria.tscn" id="2_ebhb3"]
+
+[node name="Vitoria" type="CanvasLayer" unique_id=1694734582]
+script = ExtResource("1_ebhb3")
+
+[node name="fundo" type="TextureRect" parent="." unique_id=637682584]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.965054, 0.99535227)
+texture = ExtResource("1_xnanc")
+
+[node name="Label" type="Label" parent="." unique_id=1606573378]
+offset_left = 121.0
+offset_top = 129.0
+offset_right = 333.0
+offset_bottom = 178.0
+text = "Seu Mandato acabou
+Parabéns pelo seu trabalho"
+horizontal_alignment = 1
+
+[node name="BotãoReiniciar" type="Button" parent="." unique_id=1398406910]
+z_index = 1
+offset_left = 45.0
+offset_top = 195.00002
+offset_right = 235.0
+offset_bottom = 226.00002
+scale = Vector2(0.91391563, 0.91391563)
+text = "Começa novo mandado"
+
+[node name="BotãoMenu" type="Button" parent="." unique_id=2082060164]
+offset_left = 235.99998
+offset_top = 195.00002
+offset_right = 435.0
+offset_bottom = 226.00002
+scale = Vector2(0.91391563, 0.91391563)
+text = "Voltar ao menu principal"
+
+[node name="Secretaria" parent="." unique_id=1352217106 instance=ExtResource("2_ebhb3")]
+position = Vector2(30, 149)
+scale = Vector2(1.8515924, 1.8515924)
+
+[connection signal="pressed" from="BotãoReiniciar" to="." method="_on_botão_reiniciar_pressed"]
+[connection signal="pressed" from="BotãoMenu" to="." method="_on_botão_menu_pressed"]

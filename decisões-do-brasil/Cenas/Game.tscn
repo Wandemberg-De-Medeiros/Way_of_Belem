@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://25x4pwlevf6g" path="res://entidades/secretaria.tscn" id="2_cht1d"]
 [ext_resource type="PackedScene" uid="uid://bj3ptpegsjmm6" path="res://entidades/icone_industria.tscn" id="6_8i4ha"]
 [ext_resource type="PackedScene" uid="uid://c1lhx7ufb0jfd" path="res://entidades/icone_floresta.tscn" id="6_cvv8b"]
+[ext_resource type="PackedScene" uid="uid://begk6tgomf3ow" path="res://entidades/moon.tscn" id="6_rdjek"]
 [ext_resource type="Script" uid="uid://bebqcb0fmskm8" path="res://scripts/interface_status.gd" id="6_uspeq"]
 [ext_resource type="PackedScene" uid="uid://begvi3v6tqhrn" path="res://entidades/icone_verba.tscn" id="8_2uwyn"]
 [ext_resource type="PackedScene" uid="uid://c4fqjsqqoosav" path="res://entidades/icone_povo.tscn" id="9_cht1d"]
@@ -30,6 +31,10 @@ script = ExtResource("13_lx5o4")
 
 [node name="Secretaria" parent="." unique_id=1352217106 instance=ExtResource("2_cht1d")]
 position = Vector2(324.43942, 149.9196)
+
+[node name="Moon" parent="." unique_id=1448648304 instance=ExtResource("6_rdjek")]
+position = Vector2(72.558334, 208.27759)
+scale = Vector2(0.99999994, 0.99999994)
 
 [node name="InterfaceStatus" type="HBoxContainer" parent="." unique_id=1419972381]
 anchors_preset = 14

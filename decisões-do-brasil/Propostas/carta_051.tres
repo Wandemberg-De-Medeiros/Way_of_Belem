@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://bt3371eopql77"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_rhflw"]
+
+[resource]
+script = ExtResource("1_rhflw")
+id = "051"
+texto_proposta = "Isenção Fiscal Tech: Empresas de TI solicitam isenção de impostos."
+texto_opc1 = "Isenção total por 10 anos."
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Isenção parcial por 5 anos."
+opc2_industria = 10
+opc2_verba = -10
+texto_opc3 = "Negar isenção."
+opc3_industria = -20
+opc3_verba = 20

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://diibi78o2bybv"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_g11ij"]
+
+[resource]
+script = ExtResource("1_g11ij")
+id = "034"
+texto_proposta = "Festa Junina: Organização do tradicional arraial da cidade."
+texto_opc1 = "Grande evento patrocinado."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Evento comunitário simples."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Cancelar evento."
+opc3_verba = 10
+opc3_popularidade = -20

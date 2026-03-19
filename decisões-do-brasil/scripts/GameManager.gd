@@ -6,6 +6,9 @@ var industria: int = 70
 var verba: int = 70
 var popularidade: int = 70
 
+var contador_cartas: int = 0
+const meta_vitoria: int = 48
+
 # Sinal para avisar a interface que os números mudaram
 signal status_atualizado
 
@@ -15,6 +18,8 @@ func aplicar_mudancas(f, i, v, p):
 	industria = clampi(industria + i, 0, 150)
 	verba = clampi(verba + v, 0, 150)
 	popularidade = clampi(popularidade + p, 0, 150)
+	
+	contador_cartas += 1
 	
 	# Emite o sinal para os ícones se atualizarem
 	status_atualizado.emit()
@@ -27,3 +32,5 @@ func _checar_fim_de_jogo():
 	
 	if acabou_por_falta or acabou_por_excesso:
 		get_tree().call_deferred("change_scene_to_file", "res://cenas/game_over.tscn")
+	elif contador_cartas >= meta_vitoria:
+		get_tree().call_deferred("change_scene_to_file", "res://cenas/vitoria.tscn")

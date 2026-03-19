@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://dte1k1jm4m1ya"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_rc1fc"]
+
+[resource]
+script = ExtResource("1_rc1fc")
+id = "074"
+texto_proposta = "Corredores Ecológicos: A fragmentação dos habitats está impedindo a circulação de espécies."
+texto_opc1 = "Criar corredores legais."
+opc1_floresta = 20
+opc1_industria = -20
+texto_opc2 = "Corredores apenas em parques."
+opc2_floresta = 10
+opc2_verba = -10
+texto_opc3 = "Não criar corredores."
+opc3_floresta = -20
+opc3_industria = 10

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://f1ha1qku61n1"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_lv37q"]
+
+[resource]
+script = ExtResource("1_lv37q")
+id = "087"
+texto_proposta = "Taxa de Turismo: Cobrar uma taxa de visitantes externos."
+texto_opc1 = "Implementar taxa de R$50."
+opc1_industria = -20
+opc1_verba = 20
+texto_opc2 = "Taxa simbólica."
+opc2_industria = -10
+opc2_verba = 10
+texto_opc3 = "Não cobrar."
+opc3_industria = 20
+opc3_verba = -20

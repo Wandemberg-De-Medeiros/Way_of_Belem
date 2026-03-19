@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cw72rp673mykr"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_8nx0j"]
+
+[resource]
+script = ExtResource("1_8nx0j")
+id = "026"
+texto_proposta = "Segurança Pública: Aumento da criminalidade relatado no centro."
+texto_opc1 = "Mais policiais e câmeras."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Programas sociais."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Cortar verba da segurança."
+opc3_verba = 10
+opc3_popularidade = -20

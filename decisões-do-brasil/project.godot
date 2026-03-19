@@ -13,7 +13,7 @@ config_version=5
 config/name="Decisões do Brasil"
 run/main_scene="uid://bdm174can4ons"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://b256a88r3xnqe"
 
 [autoload]
 

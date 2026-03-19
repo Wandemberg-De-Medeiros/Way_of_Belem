@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://df08bbo33w83v"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_o8tlo"]
+
+[resource]
+script = ExtResource("1_o8tlo")
+id = "076"
+texto_proposta = "Selo Verde: Proposta de certificação para empresas que respeitam o meio ambiente."
+texto_opc1 = "Subsidiar certificação."
+opc1_floresta = 20
+opc1_verba = -20
+texto_opc2 = "Oferecer desconto na taxa."
+opc2_floresta = 10
+opc2_verba = -10
+texto_opc3 = "Não investir no selo."
+opc3_floresta = -20
+opc3_verba = 10

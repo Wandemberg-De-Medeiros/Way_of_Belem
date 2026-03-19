@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://n3mbxtk2sv0w"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_otddu"]
+
+[resource]
+script = ExtResource("1_otddu")
+id = "040"
+texto_proposta = "Patrimônio Imaterial: Registro de tradições locais."
+texto_opc1 = "Programa de registro completo."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Registro apenas das principais."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Não registrar."
+opc3_verba = 10
+opc3_popularidade = -20

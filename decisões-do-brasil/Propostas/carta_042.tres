@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cnmmw58lx8q8f"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_07dso"]
+
+[resource]
+script = ExtResource("1_07dso")
+id = "042"
+texto_proposta = "Impostos para Empresas: O Comercio solicita uma redução de taxas."
+texto_opc1 = "Reduzir impostos em 20%."
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Benefícios para quem contrata local."
+opc2_industria = 10
+opc2_verba = -10
+texto_opc3 = "Manter taxas altas."
+opc3_industria = -20
+opc3_verba = 20

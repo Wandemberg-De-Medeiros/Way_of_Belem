@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://ftu87s6igrgj"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_aacbm"]
+
+[resource]
+script = ExtResource("1_aacbm")
+id = "056"
+texto_proposta = "Licitações: Pressão para realizar compras diretas."
+texto_opc1 = "Permitir compras sem licitação."
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Agilizar licitações existentes."
+opc2_industria = 10
+opc2_verba = -10
+texto_opc3 = "Manter licitação rigorosa."
+opc3_industria = -20
+opc3_verba = 20

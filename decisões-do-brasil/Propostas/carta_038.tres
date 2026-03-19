@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://brg87xao881t3"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_lfif1"]
+
+[resource]
+script = ExtResource("1_lfif1")
+id = "038"
+texto_proposta = "Centro Cultural: Existe um prédio histórico importante abandonado."
+texto_opc1 = "Transformar em centro cultural."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Vender para iniciativa privada."
+opc2_verba = 20
+opc2_popularidade = -20
+texto_opc3 = "Manter fechado."
+opc3_verba = 10
+opc3_popularidade = -10

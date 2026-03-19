@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cfo87srnj6eim"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_tk6au"]
+
+[resource]
+script = ExtResource("1_tk6au")
+id = "089"
+texto_proposta = "Corte de Gastos: O orçamento municipal apresenta um déficit preocupante."
+texto_opc1 = "Cortar verba de obras."
+opc1_verba = 20
+opc1_popularidade = -20
+texto_opc2 = "Cortar verba de pessoal."
+opc2_verba = 20
+opc2_popularidade = -20
+texto_opc3 = "Aumentar impostos."
+opc3_industria = -20
+opc3_verba = 20

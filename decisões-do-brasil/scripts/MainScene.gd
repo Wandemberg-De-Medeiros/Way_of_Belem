@@ -44,17 +44,12 @@ func proxima_carta():
 	# 2. Retira o primeiro dado da lista
 	var dados = lista_de_propostas.pop_front()
 	
-	# 3. Instancia a cena da carta
 	var instancia_cena = cena_da_carta.instantiate()
-	
-	# 4. Adiciona à árvore ANTES de configurar (Importante para o @onready)
 	add_child(instancia_cena)
-	
-	# 5. Define a posição (Descomente e ajuste se necessário)
+
+	# Define a posição (Descomente e ajuste se necessário)
 	# instancia_cena.global_position = Vector2(219.5, 127.5)
 	
-	# 6. Acesso Seguro à Area2D
-	# Usamos get_node_or_null para evitar que o Godot trave se o nome mudar
 	var area_carta = instancia_cena.get_node_or_null("Area2D")
 	
 	if area_carta:
@@ -69,3 +64,11 @@ func proxima_carta():
 		# Se a carta falhou, chama a próxima para o jogo não travar
 		proxima_carta()
 		
+	
+func _exit_tree():
+	# Desconecta para evitar que a carta tente chamar o MainScene enquanto ele morre
+	for child in get_children():
+		if child.has_node("Area2D"):
+			var area = child.get_node("Area2D")
+			if area.tree_exited.is_connected(proxima_carta):
+				area.tree_exited.disconnect(proxima_carta)

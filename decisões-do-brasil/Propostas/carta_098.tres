@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://buuksp8toxnaw"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_u5n3j"]
+
+[resource]
+script = ExtResource("1_u5n3j")
+id = "098"
+texto_proposta = "Fundos Setoriais: Criar fundos para Saúde e Educação."
+texto_opc1 = "Vincular 30% da verba."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Vincular 10% da verba."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Não vincular verba."
+opc3_verba = 20
+opc3_popularidade = -20

@@ -1,22 +1,17 @@
-[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://ppikmudxhng1"]
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://dc88js1ieovxs"]
 
 [ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_t33oo"]
 
 [resource]
 script = ExtResource("1_t33oo")
 id = "009"
-texto_proposta = "Pescadores artesanais protestam contra pesca industrial."
-texto_opc1 = "Banir Grandes Barcos"
+texto_proposta = "Energia Solar: Proposta de painéis em prédios públicos."
+texto_opc1 = "Instalar em todos os prédios municipais."
 opc1_floresta = 20
-opc1_industria = -20
-opc1_verba = -5
-opc1_popularidade = 15
-texto_opc2 = "Cotas de Pesca"
+opc1_verba = -20
+texto_opc2 = "Instalar apenas na prefeitura."
 opc2_floresta = 10
-opc2_industria = -5
-opc2_verba = 5
-texto_opc3 = "Liberar Geral"
-opc3_floresta = -30
-opc3_industria = 20
-opc3_verba = 15
-opc3_popularidade = -10
+opc2_verba = -10
+texto_opc3 = "Manter energia convencional."
+opc3_floresta = -10
+opc3_verba = 10

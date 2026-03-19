@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://s4tjhvtv2pji"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_kr1ns"]
+
+[resource]
+script = ExtResource("1_kr1ns")
+id = "050"
+texto_proposta = "Pesca Artesanal: Pescadores pedem proteção contra frotas industriais."
+texto_opc1 = "Reserva exclusiva para artesanal."
+opc1_industria = -20
+opc1_popularidade = 20
+texto_opc2 = "Regras de coexistência."
+opc2_industria = -10
+opc2_popularidade = 10
+texto_opc3 = "Liberar pesca industrial."
+opc3_industria = 20
+opc3_popularidade = -20

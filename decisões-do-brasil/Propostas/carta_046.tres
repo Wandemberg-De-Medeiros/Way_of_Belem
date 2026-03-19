@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://c7hl8p7vyyem2"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_be2p5"]
+
+[resource]
+script = ExtResource("1_be2p5")
+id = "046"
+texto_proposta = "Shopping Center: Uma grande rede deseja construir um novo shopping na cidade."
+texto_opc1 = "Aprovar construção em área central."
+opc1_floresta = -20
+opc1_industria = 20
+texto_opc2 = "Exigir área já urbanizada."
+opc2_industria = 10
+opc2_verba = -10
+texto_opc3 = "Negar licença."
+opc3_floresta = 10
+opc3_industria = -20

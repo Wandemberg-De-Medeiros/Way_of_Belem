@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cgeh1rpu00b8s"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_0i475"]
+
+[resource]
+script = ExtResource("1_0i475")
+id = "070"
+texto_proposta = "Queimadas: Os focos de calor na região aumentou drasticamente."
+texto_opc1 = "Fiscalização rigorosa e multas."
+opc1_floresta = 20
+opc1_industria = -20
+texto_opc2 = "Campanha educativa."
+opc2_floresta = 10
+opc2_verba = -10
+texto_opc3 = "Ignorar focos."
+opc3_floresta = -20
+opc3_industria = 10

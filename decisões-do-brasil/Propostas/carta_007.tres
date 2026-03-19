@@ -1,21 +1,17 @@
-[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://d1lalgiu3ksir"]
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://3o4gg77hjrrj"]
 
 [ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_pv57a"]
 
 [resource]
 script = ExtResource("1_pv57a")
 id = "007"
-texto_proposta = "O ar das grandes cidades está irrespirável por poluição."
-texto_opc1 = "Multar Indústrias"
-opc1_floresta = 5
-opc1_industria = -25
-opc1_verba = 20
-opc1_popularidade = 15
-texto_opc2 = "Filtros Obrigatórios"
-opc2_industria = -10
+texto_proposta = "Ciclovia da Cidade: Movimento pede mais vias para bicicletas."
+texto_opc1 = "50km de ciclovias integradas."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "10km em áreas turísticas apenas."
 opc2_verba = -10
-opc2_popularidade = 5
-texto_opc3 = "Não intervir"
-opc3_floresta = -15
-opc3_industria = 10
-opc3_popularidade = -20
+opc2_popularidade = 10
+texto_opc3 = "Cancelar projeto."
+opc3_verba = 10
+opc3_popularidade = -10

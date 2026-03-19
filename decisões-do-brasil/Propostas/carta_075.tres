@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://c2uk8sywvkp03"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_kdsej"]
+
+[resource]
+script = ExtResource("1_kdsej")
+id = "075"
+texto_proposta = "Educação Ambiental: As escolas municipais não possuem um programa ambiental."
+texto_opc1 = "Programa completo em todas."
+opc1_floresta = 20
+opc1_verba = -20
+texto_opc2 = "Palestras eventuais."
+opc2_floresta = 10
+opc2_verba = -10
+texto_opc3 = "Cortar verba."
+opc3_floresta = -20
+opc3_verba = 10

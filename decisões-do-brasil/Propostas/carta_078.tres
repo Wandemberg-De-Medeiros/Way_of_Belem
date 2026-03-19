@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://b5nhrsbeg4p88"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_bu36n"]
+
+[resource]
+script = ExtResource("1_bu36n")
+id = "078"
+texto_proposta = "Controle de Pragas: Áreas verdes públicas estão sofrendo com infestações de pragas."
+texto_opc1 = "Uso de biodefensivos caros."
+opc1_floresta = 20
+opc1_verba = -20
+texto_opc2 = "Controle manual."
+opc2_floresta = 10
+opc2_verba = -10
+texto_opc3 = "Não tratar."
+opc3_floresta = -20
+opc3_verba = 10

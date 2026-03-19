@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://b80nfhy4e0rvh"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_6nhc7"]
+
+[resource]
+script = ExtResource("1_6nhc7")
+id = "023"
+texto_proposta = "Feira de Gastronomia: Chefes locais propõem um evento anual."
+texto_opc1 = "Patrocinar festival internacional."
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Apoiar feira comunitária."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Não financiar."
+opc3_industria = -10
+opc3_verba = 10

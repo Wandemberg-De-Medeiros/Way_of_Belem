@@ -1,22 +1,17 @@
-[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://dr5g8nqjrxten"]
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://ku6yqunv4q1k"]
 
 [ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_4r52f"]
 
 [resource]
 script = ExtResource("1_4r52f")
 id = "001"
-texto_proposta = "Grande jazida de ferro descoberta na Amazônia. O que fazer?"
-texto_opc1 = "Proibir Extração"
-opc1_floresta = 10
-opc1_industria = -10
-opc1_verba = -5
-opc1_popularidade = 5
-texto_opc2 = "Extração Estatal"
-opc2_floresta = -15
-opc2_industria = 10
-opc2_verba = 20
-texto_opc3 = "Leiloar para Empresas"
-opc3_floresta = -25
-opc3_industria = 25
-opc3_verba = 40
-opc3_popularidade = -10
+texto_proposta = "Revitalização do Ver-o-Peso: O mercado precisa de melhorias sanitárias."
+texto_opc1 = "Reforma completa e moderna."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Reparos essenciais apenas."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Adiar obra para economizar."
+opc3_verba = 10
+opc3_popularidade = -20

@@ -1,23 +1,17 @@
-[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://c6q2hsqc2jo51"]
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://bfgtoypgnbh6q"]
 
 [ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_5tepw"]
 
 [resource]
 script = ExtResource("1_5tepw")
 id = "003"
-texto_proposta = "O setor agrícola pede subsídios para expandir pastagens."
-texto_opc1 = "Negar Subsídio"
-opc1_floresta = 15
-opc1_industria = -5
-opc1_verba = 10
-opc1_popularidade = -15
-texto_opc2 = "Apoio Moderado"
+texto_proposta = "Asfaltamento de Ruas: Bairros periféricos exigem pavimentação."
+texto_opc1 = "Asfalto completo em todas as ruas."
+opc1_floresta = -20
+opc1_popularidade = 20
+texto_opc2 = "Pavimentação ecológica com drenagem."
 opc2_floresta = -10
-opc2_industria = 5
-opc2_verba = -5
 opc2_popularidade = 10
-texto_opc3 = "Apoio Total"
-opc3_floresta = -30
-opc3_industria = 15
-opc3_verba = -20
-opc3_popularidade = 20
+texto_opc3 = "Manter terra batida para preservar solo."
+opc3_floresta = 10
+opc3_popularidade = -20

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://p7fr32bh3hfh"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_p2o8h"]
+
+[resource]
+script = ExtResource("1_p2o8h")
+id = "044"
+texto_proposta = "Turismo de Cruzeiros: Grandes navios de cruzeiro querem atracar com mais frequência."
+texto_opc1 = "Liberar 10 navios por mês."
+opc1_floresta = -20
+opc1_industria = 20
+texto_opc2 = "Limitar a 3 navios por mês."
+opc2_floresta = -10
+opc2_industria = 10
+texto_opc3 = "Proibir Cruzeiros."
+opc3_floresta = 20
+opc3_industria = -20

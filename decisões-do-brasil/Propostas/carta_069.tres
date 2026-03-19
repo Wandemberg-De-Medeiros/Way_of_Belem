@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://bl7ud5bvhplw8"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_3jg87"]
+
+[resource]
+script = ExtResource("1_3jg87")
+id = "069"
+texto_proposta = "Enchentes: As áreas baixas da cidade alagam a cada chuva forte."
+texto_opc1 = "Obras completas de drenagem."
+opc1_floresta = -20
+opc1_popularidade = 20
+texto_opc2 = "Sistema de alerta."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Não investir."
+opc3_verba = 10
+opc3_popularidade = -20

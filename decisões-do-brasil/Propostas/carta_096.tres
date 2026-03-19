@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://01ekve5xqyfm"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_s0b1v"]
+
+[resource]
+script = ExtResource("1_s0b1v")
+id = "096"
+texto_proposta = "Convênios Estaduais: O estado oferece repasses de verba, mas com exigências rígidas."
+texto_opc1 = "Aceitar com condições."
+opc1_industria = -20
+opc1_verba = 20
+texto_opc2 = "Negociar condições."
+opc2_industria = -10
+opc2_verba = 10
+texto_opc3 = "Recusar convênio."
+opc3_industria = 10
+opc3_verba = -20

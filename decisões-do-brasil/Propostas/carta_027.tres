@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://dj5fg6wiim61y"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_hmbda"]
+
+[resource]
+script = ExtResource("1_hmbda")
+id = "027"
+texto_proposta = "Habitação Popular: Famílias vivem em áreas de risco iminente."
+texto_opc1 = "Construir conjuntos habitacionais."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Reassentamento em áreas urbanas."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Não intervir."
+opc3_verba = 10
+opc3_popularidade = -20

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://etq3xitbsoxk"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_dfgqn"]
+
+[resource]
+script = ExtResource("1_dfgqn")
+id = "095"
+texto_proposta = "Dívida Ativa: Muitas pessoa não pagam impostos."
+texto_opc1 = "Cobrança judicial rigorosa."
+opc1_verba = 20
+opc1_popularidade = -20
+texto_opc2 = "Programa de parcelamento."
+opc2_verba = 10
+opc2_popularidade = -10
+texto_opc3 = "Anistia de dívidas."
+opc3_verba = -20
+opc3_popularidade = 20

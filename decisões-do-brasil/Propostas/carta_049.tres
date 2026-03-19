@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://gssy5wrgid2j"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_gdg6k"]
+
+[resource]
+script = ExtResource("1_gdg6k")
+id = "049"
+texto_proposta = "Agricultura Urbana: Comunidades solicitam hortas comunitárias."
+texto_opc1 = "Apoiar 50 hortas urbanas."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Permitir apenas em áreas específicas."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Proibir hortas em ruas."
+opc3_verba = 10
+opc3_popularidade = -20

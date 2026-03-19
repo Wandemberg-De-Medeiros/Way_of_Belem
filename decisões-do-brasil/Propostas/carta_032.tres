@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://bshnh0a4s4l4e"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_7u2ur"]
+
+[resource]
+script = ExtResource("1_7u2ur")
+id = "032"
+texto_proposta = "Cine Popular: Cinemas de rua estão fechando."
+texto_opc1 = "Subsídio para cinemas."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Isenção fiscal para cinemas."
+opc2_industria = 10
+opc2_verba = -10
+texto_opc3 = "Deixar fechar."
+opc3_verba = 10
+opc3_popularidade = -20

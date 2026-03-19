@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cic0bmiqytnyy"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_ijwtc"]
+
+[resource]
+script = ExtResource("1_ijwtc")
+id = "072"
+texto_proposta = "Proteção de Nascentes: As nascentes urbanas estão secando rapidamente."
+texto_opc1 = "Cercar e proteger todas."
+opc1_floresta = 20
+opc1_verba = -20
+texto_opc2 = "Proteger apenas as principais."
+opc2_floresta = 10
+opc2_verba = -10
+texto_opc3 = "Permitir uso próximo."
+opc3_floresta = -20
+opc3_verba = 10

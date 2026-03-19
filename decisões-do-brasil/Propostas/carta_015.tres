@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://2dcuuvaukvq0"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_1cayx"]
+
+[resource]
+script = ExtResource("1_1cayx")
+id = "015"
+texto_proposta = "Expansão da Rede Elétrica: Bairros novos sem energia estável."
+texto_opc1 = "Subestação nova e cabos."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Reforço na rede existente."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Adiar expansão."
+opc3_verba = 10
+opc3_popularidade = -20

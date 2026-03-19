@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://p85hwqbv3stg"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_cnqrc"]
+
+[resource]
+script = ExtResource("1_cnqrc")
+id = "090"
+texto_proposta = "Venda de Ativos: Prédios públicos ociosos estão gerando custos de manutenção."
+texto_opc1 = "Vender para privados."
+opc1_verba = 20
+opc1_popularidade = -20
+texto_opc2 = "Alugar para privados."
+opc2_verba = 10
+opc2_popularidade = -10
+texto_opc3 = "Manter públicos."
+opc3_verba = -20
+opc3_popularidade = 10

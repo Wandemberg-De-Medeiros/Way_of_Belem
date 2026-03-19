@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://clogbvaeddxbt"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_olmsj"]
+
+[resource]
+script = ExtResource("1_olmsj")
+id = "035"
+texto_proposta = "Música ao Vivo: Lei do silêncio VS. A vida noturna."
+texto_opc1 = "Liberar shows até tarde."
+opc1_industria = 20
+opc1_popularidade = -20
+texto_opc2 = "Zonas de entretenimento."
+opc2_industria = 10
+opc2_popularidade = -10
+texto_opc3 = "Silêncio rigoroso."
+opc3_industria = -20
+opc3_popularidade = 20

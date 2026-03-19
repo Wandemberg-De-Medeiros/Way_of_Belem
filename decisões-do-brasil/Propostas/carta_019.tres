@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://br6jmygta42ki"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_2qulf"]
+
+[resource]
+script = ExtResource("1_2qulf")
+id = "019"
+texto_proposta = "Mercado de Abastecimento: Preço dos alimentos subindo."
+texto_opc1 = "Subsidiar feira popular."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Fiscalizar preços."
+opc2_industria = -10
+opc2_popularidade = 10
+texto_opc3 = "Deixar o mercado agir."
+opc3_industria = 10
+opc3_popularidade = -20
