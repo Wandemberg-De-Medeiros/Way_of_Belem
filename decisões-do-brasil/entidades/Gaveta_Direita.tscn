@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bjjubss32xawc"]
+
+[ext_resource type="Texture2D" uid="uid://cqjf86iyn1qmo" path="res://Sprites/Mesa_pra_montar/Gaveta_pro_clashroyale.png" id="1_ituk1"]
+[ext_resource type="Script" uid="uid://bhv6w22uc52i6" path="res://scripts/menu/Gaveta_Direita.gd" id="1_yxl6w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yxl6w"]
+size = Vector2(123, 108)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pi15x"]
+size = Vector2(64, 32)
+
+[node name="GavetaDireita" type="Area2D" unique_id=1941700184]
+script = ExtResource("1_yxl6w")
+
+[node name="Sprite_Aberta" type="Sprite2D" parent="." unique_id=1889498963]
+scale = Vector2(0.965, 1)
+texture = ExtResource("1_ituk1")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1162251865]
+position = Vector2(369.5, 196)
+shape = SubResource("RectangleShape2D_yxl6w")
+
+[node name="Botao_Sair" type="Area2D" parent="." unique_id=1122751138]
+
+[node name="CollisionShape_Celular" type="CollisionShape2D" parent="Botao_Sair" unique_id=1170351882]
+position = Vector2(368, 164)
+shape = SubResource("RectangleShape2D_pi15x")
+debug_color = Color(0.18003303, 0.6432267, 3.85046e-07, 0.41960785)
+
+[connection signal="input_event" from="Botao_Sair" to="." method="_on_botao_sair_input_event"]

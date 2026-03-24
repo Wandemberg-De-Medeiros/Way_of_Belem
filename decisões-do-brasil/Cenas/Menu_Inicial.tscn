@@ -1,61 +1,90 @@
 [gd_scene format=3 uid="uid://bdm174can4ons"]
 
 [ext_resource type="Texture2D" uid="uid://doyfwkdjiip03" path="res://Sprites/EscritorioDoPlayerWIP.png" id="1_jnx6k"]
-[ext_resource type="Script" uid="uid://dhk58nnsfv450" path="res://scripts/Menu_Inicial.gd" id="1_k5312"]
+[ext_resource type="Script" uid="uid://b42isjksbcsxw" path="res://scripts/menu/Menu_Inicial.gd" id="1_kv5c6"]
 [ext_resource type="Texture2D" uid="uid://dd8y7kwuevguv" path="res://Sprites/Mesa_pra_montar/SomenteMesa.png" id="3_upap4"]
 [ext_resource type="Texture2D" uid="uid://5uhfmwscqokc" path="res://Sprites/Mesa_pra_montar/1_PastaPrincipal.png" id="4_kv5c6"]
+[ext_resource type="PackedScene" uid="uid://dbbdulc8x4nrq" path="res://entidades/GavetaEsquerda.tscn" id="5_k8qbq"]
 [ext_resource type="Texture2D" uid="uid://bqd7scjpyjch1" path="res://Sprites/Mesa_pra_montar/2_Cafe.png" id="5_m3f4d"]
 [ext_resource type="Texture2D" uid="uid://c3lxyix4l63by" path="res://Sprites/Mesa_pra_montar/3_Interfone.png" id="6_0cjcu"]
+[ext_resource type="PackedScene" uid="uid://bjjubss32xawc" path="res://entidades/Gaveta_Direita.tscn" id="6_upap4"]
 
-[node name="MenuInicial" type="Control" unique_id=1030503165]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 437.0
-offset_bottom = 255.0
-script = ExtResource("1_k5312")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mq57u"]
+size = Vector2(137, 70.5)
 
-[node name="fundo" type="TextureRect" parent="." unique_id=1547309762]
-layout_mode = 0
-offset_right = 439.0
-offset_bottom = 255.0
-scale = Vector2(0.96476287, 0.99600595)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k8qbq"]
+size = Vector2(80, 39)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_upap4"]
+size = Vector2(68, 52)
+
+[node name="MenuInicial" type="Node2D" unique_id=1133412576]
+script = ExtResource("1_kv5c6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=955026174]
+scale = Vector2(0.965, 1)
 texture = ExtResource("1_jnx6k")
+centered = false
 
-[node name="mesa" type="TextureRect" parent="." unique_id=1381225016]
-layout_mode = 0
-offset_right = 439.0
-offset_bottom = 255.0
-scale = Vector2(0.96476287, 0.99600595)
+[node name="Sprite_mesa" type="Sprite2D" parent="." unique_id=1864472827]
+scale = Vector2(0.965, 1)
 texture = ExtResource("3_upap4")
+centered = false
 
-[node name="inicio" type="TextureRect" parent="." unique_id=1166646542]
-layout_mode = 0
-offset_right = 439.0
-offset_bottom = 255.0
-scale = Vector2(0.96476287, 0.99600595)
+[node name="Botao_PastaPrincipal" type="Area2D" parent="." unique_id=293958231]
+z_index = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Botao_PastaPrincipal" unique_id=1437473407]
+z_index = 1
+position = Vector2(209, 56)
+shape = SubResource("RectangleShape2D_mq57u")
+
+[node name="Sprite2D" type="Sprite2D" parent="Botao_PastaPrincipal" unique_id=2043268248]
+scale = Vector2(0.965, 1)
 texture = ExtResource("4_kv5c6")
+centered = false
 
-[node name="cafe" type="TextureRect" parent="." unique_id=1071519438]
-layout_mode = 0
-offset_right = 439.0
-offset_bottom = 255.0
-scale = Vector2(0.96476287, 0.99600595)
+[node name="Botao_Cafe" type="Area2D" parent="." unique_id=757354955]
+z_index = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Botao_Cafe" unique_id=697069942]
+z_index = 1
+position = Vector2(384, 79.5)
+shape = SubResource("RectangleShape2D_k8qbq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Botao_Cafe" unique_id=543296675]
+scale = Vector2(0.965, 1)
 texture = ExtResource("5_m3f4d")
+centered = false
 
-[node name="interfone" type="TextureRect" parent="." unique_id=1549446425]
-layout_mode = 0
-offset_right = 439.0
-offset_bottom = 255.0
-scale = Vector2(0.96476287, 0.99600595)
+[node name="Botao_Interfone" type="Area2D" parent="." unique_id=442961328]
+z_index = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Botao_Interfone" unique_id=1629444015]
+z_index = 1
+position = Vector2(54, 51)
+shape = SubResource("RectangleShape2D_upap4")
+
+[node name="Sprite2D" type="Sprite2D" parent="Botao_Interfone" unique_id=573591027]
+scale = Vector2(0.965, 1)
 texture = ExtResource("6_0cjcu")
+centered = false
 
-[node name="INICIAR GOVERNO" type="Button" parent="." unique_id=2103782598]
-layout_mode = 0
-offset_left = 126.0
-offset_top = 35.0
-offset_right = 303.0
-offset_bottom = 67.0
-text = "INICIAR ESSA BUDEGA
-"
+[node name="GavetaEsquerda" parent="." unique_id=470634098 instance=ExtResource("5_k8qbq")]
 
-[connection signal="pressed" from="INICIAR GOVERNO" to="." method="_on_iniciar_governo_pressed"]
+[node name="GavetaDireita" parent="." unique_id=1941700184 instance=ExtResource("6_upap4")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=270542142]
+visible = false
+
+[node name="SplashScreen" type="ColorRect" parent="CanvasLayer" unique_id=1491433449]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.9372549, 0.92941177, 0.88235295, 1)
+
+[connection signal="input_event" from="Botao_PastaPrincipal" to="." method="_on_botao_pasta_principal_input_event"]
+[connection signal="input_event" from="Botao_Cafe" to="." method="_on_botao_cafe_input_event"]
+[connection signal="input_event" from="Botao_Interfone" to="." method="_on_botao_interfone_input_event"]

@@ -33,4 +33,14 @@ fill_mode = 3
 texture_under = ExtResource("1_j38ub")
 texture_over = ExtResource("2_lhaal")
 texture_progress = ExtResource("3_kesxk")
-tint_over = Color(1, 1, 1, 0.5882353)
+tint_over = Color(1, 1, 1, 0)
+
+[node name="Node2D" type="Node2D" parent="BarraProgresso" unique_id=410508263]
+position = Vector2(2.5, 30)
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="BarraProgresso/Node2D" unique_id=1225935690]
+texture = ExtResource("1_j38ub")
+
+[node name="Sprite2D2" type="Sprite2D" parent="BarraProgresso/Node2D" unique_id=529889830]
+texture = ExtResource("2_lhaal")

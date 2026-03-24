@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dbbdulc8x4nrq"]
+
+[ext_resource type="Texture2D" uid="uid://cibvxek5ebx1i" path="res://Sprites/Mesa_pra_montar/Gaveta_praquela_pasta_ali_o.png" id="1_ah806"]
+[ext_resource type="Script" uid="uid://ca2s5acf2nuq4" path="res://scripts/menu/Gaveta_Esquerda.gd" id="1_wnrjk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_10yye"]
+size = Vector2(123, 106)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s34xi"]
+size = Vector2(110, 58)
+
+[node name="GavetaEsquerda" type="Area2D" unique_id=470634098]
+script = ExtResource("1_wnrjk")
+
+[node name="Sprite_Aberta" type="Sprite2D" parent="." unique_id=1672178278]
+scale = Vector2(0.965, 1)
+texture = ExtResource("1_ah806")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1612383426]
+position = Vector2(70, 196)
+shape = SubResource("RectangleShape2D_10yye")
+
+[node name="Botao_Creditos" type="Area2D" parent="." unique_id=674136688]
+
+[node name="CollisionShape_Pasta" type="CollisionShape2D" parent="Botao_Creditos" unique_id=2069962452]
+z_index = 1
+position = Vector2(69, 156)
+shape = SubResource("RectangleShape2D_s34xi")
+debug_color = Color(0.25555816, 0.6350555, 0, 0.41960785)
+
+[connection signal="input_event" from="Botao_Creditos" to="." method="_on_botao_creditos_input_event"]
