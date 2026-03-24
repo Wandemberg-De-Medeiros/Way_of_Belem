@@ -1,4 +1,4 @@
-extends Area2D
+extends Node2D
 
 # Usamos caminhos relativos e proteção para evitar erros de 'Nil'
 @onready var label_proposta = $Label

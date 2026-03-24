@@ -2,7 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://doyfwkdjiip03" path="res://Sprites/EscritorioDoPlayerWIP.png" id="1_jnx6k"]
 [ext_resource type="Script" uid="uid://dhk58nnsfv450" path="res://scripts/Menu_Inicial.gd" id="1_k5312"]
-[ext_resource type="PackedScene" uid="uid://25x4pwlevf6g" path="res://entidades/secretaria.tscn" id="3_ns47f"]
+[ext_resource type="Texture2D" uid="uid://dd8y7kwuevguv" path="res://Sprites/Mesa_pra_montar/SomenteMesa.png" id="3_upap4"]
+[ext_resource type="Texture2D" uid="uid://5uhfmwscqokc" path="res://Sprites/Mesa_pra_montar/1_PastaPrincipal.png" id="4_kv5c6"]
+[ext_resource type="Texture2D" uid="uid://bqd7scjpyjch1" path="res://Sprites/Mesa_pra_montar/2_Cafe.png" id="5_m3f4d"]
+[ext_resource type="Texture2D" uid="uid://c3lxyix4l63by" path="res://Sprites/Mesa_pra_montar/3_Interfone.png" id="6_0cjcu"]
 
 [node name="MenuInicial" type="Control" unique_id=1030503165]
 layout_mode = 3
@@ -11,24 +14,48 @@ offset_right = 437.0
 offset_bottom = 255.0
 script = ExtResource("1_k5312")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1547309762]
+[node name="fundo" type="TextureRect" parent="." unique_id=1547309762]
 layout_mode = 0
 offset_right = 439.0
 offset_bottom = 255.0
 scale = Vector2(0.96476287, 0.99600595)
 texture = ExtResource("1_jnx6k")
 
+[node name="mesa" type="TextureRect" parent="." unique_id=1381225016]
+layout_mode = 0
+offset_right = 439.0
+offset_bottom = 255.0
+scale = Vector2(0.96476287, 0.99600595)
+texture = ExtResource("3_upap4")
+
+[node name="inicio" type="TextureRect" parent="." unique_id=1166646542]
+layout_mode = 0
+offset_right = 439.0
+offset_bottom = 255.0
+scale = Vector2(0.96476287, 0.99600595)
+texture = ExtResource("4_kv5c6")
+
+[node name="cafe" type="TextureRect" parent="." unique_id=1071519438]
+layout_mode = 0
+offset_right = 439.0
+offset_bottom = 255.0
+scale = Vector2(0.96476287, 0.99600595)
+texture = ExtResource("5_m3f4d")
+
+[node name="interfone" type="TextureRect" parent="." unique_id=1549446425]
+layout_mode = 0
+offset_right = 439.0
+offset_bottom = 255.0
+scale = Vector2(0.96476287, 0.99600595)
+texture = ExtResource("6_0cjcu")
+
 [node name="INICIAR GOVERNO" type="Button" parent="." unique_id=2103782598]
 layout_mode = 0
-offset_left = 140.0
-offset_top = 116.0
-offset_right = 284.0
-offset_bottom = 148.0
+offset_left = 126.0
+offset_top = 35.0
+offset_right = 303.0
+offset_bottom = 67.0
 text = "INICIAR ESSA BUDEGA
 "
-
-[node name="Secretaria" parent="." unique_id=1352217106 instance=ExtResource("3_ns47f")]
-position = Vector2(42, 146.00002)
-scale = Vector2(1.732, 1.732)
 
 [connection signal="pressed" from="INICIAR GOVERNO" to="." method="_on_iniciar_governo_pressed"]

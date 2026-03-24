@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dur3qmqo1d7ci" path="res://Sprites/factory/Factory_fundo.png" id="1_86qjp"]
 [ext_resource type="Texture2D" uid="uid://csk5wyls1ftrq" path="res://Sprites/factory/Factory_sobrpssicao.png" id="2_p5qtd"]
-[ext_resource type="Texture2D" uid="uid://e4tfvaxu310l" path="res://Sprites/factory/Tree_progress.png" id="3_w4k0j"]
+[ext_resource type="Texture2D" uid="uid://cyn0025i7qg5o" path="res://Sprites/tree/Tree_progresso.png" id="3_86qjp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_el6ed"]
 
@@ -33,4 +33,5 @@ value = 70.0
 fill_mode = 3
 texture_under = ExtResource("1_86qjp")
 texture_over = ExtResource("2_p5qtd")
-texture_progress = ExtResource("3_w4k0j")
+texture_progress = ExtResource("3_86qjp")
+tint_over = Color(1, 1, 1, 0.5882353)

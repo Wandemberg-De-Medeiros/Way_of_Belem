@@ -24,7 +24,7 @@ autowrap_mode = 3
 
 [node name="BarraProgresso" type="TextureProgressBar" parent="." unique_id=123806932]
 offset_left = -16.213547
-offset_top = -16.213547
+offset_top = -15.786453
 offset_right = 15.786453
 offset_bottom = 16.213547
 max_value = 150.0
@@ -33,3 +33,4 @@ fill_mode = 3
 texture_under = ExtResource("1_j38ub")
 texture_over = ExtResource("2_lhaal")
 texture_progress = ExtResource("3_kesxk")
+tint_over = Color(1, 1, 1, 0.5882353)

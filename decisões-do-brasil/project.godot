@@ -11,8 +11,10 @@ config_version=5
 [application]
 
 config/name="Decisões do Brasil"
-run/main_scene="uid://bdm174can4ons"
+run/main_scene="uid://b1yga8dk0tvwx"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+boot_splash/bg_color=Color(0.9372549, 0.92941177, 0.88235295, 1)
+boot_splash/show_image=false
 config/icon="uid://b256a88r3xnqe"
 
 [autoload]
