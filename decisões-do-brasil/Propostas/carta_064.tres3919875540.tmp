@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cqbvk5d3lmc0l"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_mc2mj"]
+
+[resource]
+script = ExtResource("1_mc2mj")
+id = "064"
+texto_proposta = "Árvores Urbanas: As mangueiras da cidade precisam de cuidados."
+texto_opc1 = "Programa completo de arborização."
+opc1_floresta = 20
+opc1_verba = -20
+texto_opc2 = "Manter árvores existentes."
+opc2_floresta = 10
+opc2_verba = -10
+texto_opc3 = "Cortar árvores doentes."
+opc3_floresta = -20
+opc3_verba = 10

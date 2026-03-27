@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://dgofkwqc0uboi"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_ckt75"]
+
+[resource]
+script = ExtResource("1_ckt75")
+id = "036"
+texto_proposta = "Turismo Religioso: Romarias aumentam na cidade."
+texto_opc1 = "Estrutura completa para romeiros."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Apoio básico."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Não investir."
+opc3_verba = 10
+opc3_popularidade = -20

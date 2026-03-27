@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://di2yo3qrs0rj5"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_iohfl"]
+
+[resource]
+script = ExtResource("1_iohfl")
+id = "092"
+texto_proposta = "Terceirização: Serviços públicos ineficientes."
+texto_opc1 = "Terceirizar tudo."
+opc1_industria = 20
+opc1_popularidade = -20
+texto_opc2 = "Terceirizar parcialmente."
+opc2_industria = 10
+opc2_popularidade = -10
+texto_opc3 = "Manter estatal."
+opc3_industria = -20
+opc3_popularidade = 10

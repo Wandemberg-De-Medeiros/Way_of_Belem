@@ -18,21 +18,31 @@ func iniciar_splash():
 		splash.mouse_filter = Control.MOUSE_FILTER_IGNORE 
 	)
 	
+
+func tocar_musica():
+	$clique.play()
+
 # --- Cliques nos Itens da Mesa ---
 
 func _on_botao_pasta_principal_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
-	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+	if event is InputEventMouseButton and event.pressed:
+		tocar_musica()
+		await get_tree().create_timer(0.1).timeout
 		GameManager.floresta = 70
 		GameManager.industria = 70
 		GameManager.verba = 70
 		GameManager.popularidade = 70
-	
-	get_tree().change_scene_to_file("res://Cenas/Game.tscn")
+		
+		get_tree().change_scene_to_file("res://Cenas/Game.tscn")
 
 func _on_botao_cafe_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.pressed:
+		tocar_musica()
+		await get_tree().create_timer(0.1).timeout
 		print("Abrindo Conquistas...")
 
 func _on_botao_interfone_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.pressed:
+		tocar_musica()
+		await get_tree().create_timer(0.1).timeout
 		print("Abrindo Configurações...")

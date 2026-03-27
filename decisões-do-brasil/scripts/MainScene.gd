@@ -2,37 +2,36 @@ extends Node2D
 
 @export var lista_de_propostas: Array[Proposta] = []
 var cena_da_carta = preload("res://entidades/Carta.tscn")
+var carta_ativa_node = null
 
 func _ready():
 	# randomize() não é mais necessário no Godot 4 (o motor já faz isso), 
 	# mas não faz mal deixar.
 	carregar_todas_as_cartas_da_pasta() 
 	proxima_carta()
+	GameManager.jogo_encerrado.connect(_on_jogo_encerrado)
+	tocar_musica_com_atraso()
+	
+	if has_node("botao_abaixar_carta"):
+		$botao_abaixar_carta.clicado.connect(_ao_clicar_no_botao_abaixar)
+
+func tocar_musica_com_atraso():
+	await get_tree().create_timer(6.0).timeout
+	tocar_musica()
+
+func tocar_musica():
+	$SomAmbiente.play()
+
+func _on_jogo_encerrado():
+	$SomAmbiente.stop()
 
 func carregar_todas_as_cartas_da_pasta():
-	var caminho = "res://Propostas/"
-	
-	# Verifica se a pasta existe antes de tentar abrir
-	if not DirAccess.dir_exists_absolute(caminho):
-		print("Erro: A pasta de propostas não existe!")
-		return
-
-	var dir = DirAccess.open(caminho)
-	lista_de_propostas.clear()
-	
-	if dir:
-		dir.list_dir_begin()
-		var nome_arquivo = dir.get_next()
-		
-		while nome_arquivo != "":
-			if nome_arquivo.ends_with(".tres"):
-				var recurso = load(caminho + nome_arquivo)
-				if recurso is Proposta:
-					lista_de_propostas.append(recurso)
-			nome_arquivo = dir.get_next()
-		
+	var banco = load("res://banco_de_cartas.tres")
+	if banco is ListaPropostas:
+		# Duplicamos a lista para não alterar o arquivo original ao dar shuffle
+		lista_de_propostas = banco.todas_as_propostas.duplicate()
 		lista_de_propostas.shuffle()
-		print("Cartas carregadas: ", lista_de_propostas.size())
+		print("Cartas carregadas via Resource: ", lista_de_propostas.size())
 
 func proxima_carta():
 	# 1. Verifica se ainda há cartas no baralho
@@ -46,11 +45,9 @@ func proxima_carta():
 	
 	var instancia_cena = cena_da_carta.instantiate()
 	add_child(instancia_cena)
-
-	# Define a posição (Descomente e ajuste se necessário)
-	# instancia_cena.global_position = Vector2(219.5, 127.5)
 	
 	var area_carta = instancia_cena.get_node_or_null("Area2D")
+	carta_ativa_node = area_carta
 	
 	if area_carta:
 		# Conecta o sinal ANTES de configurar, por segurança
@@ -63,8 +60,14 @@ func proxima_carta():
 		print("Erro Crítico: O nó 'Area2D' não foi encontrado dentro de Carta.tscn")
 		# Se a carta falhou, chama a próxima para o jogo não travar
 		proxima_carta()
-		
-	
+
+func _ao_clicar_no_botao_abaixar():
+	if is_instance_valid(carta_ativa_node):
+		if carta_ativa_node.has_method("alternar_posicao"):
+			carta_ativa_node.alternar_posicao()
+		else:
+			print("Erro: A script da Carta não possui a função 'alternar_posicao'")
+
 func _exit_tree():
 	# Desconecta para evitar que a carta tente chamar o MainScene enquanto ele morre
 	for child in get_children():

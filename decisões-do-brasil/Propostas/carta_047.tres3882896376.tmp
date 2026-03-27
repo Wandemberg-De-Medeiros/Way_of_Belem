@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://c8iw1ap1qkc5v"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_v4n44"]
+
+[resource]
+script = ExtResource("1_v4n44")
+id = "047"
+texto_proposta = "Pequenos Negócios: Comerciantes de rua solicitam apoio."
+texto_opc1 = "Programa de microcrédito."
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Treinamento e orientação."
+opc2_industria = 10
+opc2_verba = -10
+texto_opc3 = "Não oferecer apoio."
+opc3_industria = -20
+opc3_verba = 10

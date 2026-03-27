@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cibvxek5ebx1i" path="res://Sprites/Mesa_pra_montar/Gaveta_praquela_pasta_ali_o.png" id="1_ah806"]
 [ext_resource type="Script" uid="uid://ca2s5acf2nuq4" path="res://scripts/menu/Gaveta_Esquerda.gd" id="1_wnrjk"]
+[ext_resource type="AudioStream" uid="uid://do55ot27s1g48" path="res://audios/menu/click1.wav" id="3_qg76t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_10yye"]
 size = Vector2(123, 106)
@@ -28,5 +29,24 @@ z_index = 1
 position = Vector2(69, 156)
 shape = SubResource("RectangleShape2D_s34xi")
 debug_color = Color(0.25555816, 0.6350555, 0, 0.41960785)
+
+[node name="clique" type="AudioStreamPlayer2D" parent="Botao_Creditos" unique_id=776409155]
+stream = ExtResource("3_qg76t")
+bus = &"clique"
+
+[node name="clique" type="AudioStreamPlayer2D" parent="." unique_id=1090219204]
+stream = ExtResource("3_qg76t")
+bus = &"clique"
+
+[node name="Label" type="Label" parent="." unique_id=2055951915]
+modulate = Color(0.43825606, 0, 0.090171196, 1)
+z_index = 1
+offset_left = 32.0
+offset_top = 156.0
+offset_right = 108.0
+offset_bottom = 179.0
+text = "Créditos"
+horizontal_alignment = 1
+autowrap_mode = 3
 
 [connection signal="input_event" from="Botao_Creditos" to="." method="_on_botao_creditos_input_event"]

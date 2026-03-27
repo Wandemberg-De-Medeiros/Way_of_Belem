@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://byw62uunn57cn"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_ycos8"]
+
+[resource]
+script = ExtResource("1_ycos8")
+id = "067"
+texto_proposta = "Turismo Ecológico: Operadoras de turismo querem expandir o número de passeios."
+texto_opc1 = "Liberar mais roteiros."
+opc1_floresta = -20
+opc1_industria = 20
+texto_opc2 = "Limitar com regras rígidas."
+opc2_floresta = 20
+opc2_industria = -20
+texto_opc3 = "Proibir passeios privados."
+opc3_floresta = 10
+opc3_industria = -10

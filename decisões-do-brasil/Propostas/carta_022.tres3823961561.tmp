@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://b3hjq4kid4v81"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_vasr7"]
+
+[resource]
+script = ExtResource("1_vasr7")
+id = "022"
+texto_proposta = "Theatro da Paz: O patrimônio histórico precisa de restauração urgente."
+texto_opc1 = "Restauração completa e tecnológica."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Manutenção básica."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Fechar para economizar."
+opc3_verba = 10
+opc3_popularidade = -20

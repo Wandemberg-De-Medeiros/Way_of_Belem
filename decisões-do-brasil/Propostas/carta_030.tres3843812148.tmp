@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://gb4xkmfcv3hl"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_nqaaf"]
+
+[resource]
+script = ExtResource("1_nqaaf")
+id = "030"
+texto_proposta = "Educação Infantil: Existe uma grande falta de vagas em creches."
+texto_opc1 = "Construir 20 novas creches."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Ampliar vagas nas existentes."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Congelar novas vagas."
+opc3_verba = 10
+opc3_popularidade = -20

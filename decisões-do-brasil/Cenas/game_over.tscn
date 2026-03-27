@@ -1,45 +1,72 @@
 [gd_scene format=3 uid="uid://dugbqhi3luteg"]
 
 [ext_resource type="Script" uid="uid://be3xci8b8ry6w" path="res://scripts/game_over.gd" id="1_7y2ld"]
-[ext_resource type="Texture2D" uid="uid://doyfwkdjiip03" path="res://Sprites/EscritorioDoPlayerWIP.png" id="1_18dpl"]
-[ext_resource type="PackedScene" uid="uid://25x4pwlevf6g" path="res://entidades/secretaria.tscn" id="3_glpug"]
+[ext_resource type="Texture2D" uid="uid://m4umotm6ctsv" path="res://Sprites/cena de creditos/mesa.png" id="2_o6hi5"]
+[ext_resource type="Texture2D" uid="uid://daeyvgkbckxla" path="res://Sprites/cena de creditos/pasta_aberta.png" id="3_qmc8d"]
+[ext_resource type="AudioStream" uid="uid://cx5uwgo8c5aln" path="res://audios/intera+º+Áes/gameover1.wav" id="4_vpsjw"]
+[ext_resource type="Texture2D" uid="uid://dbrr5eu25lcay" path="res://Sprites/cena de creditos/folha.png" id="4_x26pc"]
+[ext_resource type="AudioStream" uid="uid://do55ot27s1g48" path="res://audios/menu/click1.wav" id="5_m7y8o"]
 
-[node name="GameOver" type="CanvasLayer" unique_id=1551863065]
+[node name="GameOver" type="Node2D" unique_id=1116896119]
 script = ExtResource("1_7y2ld")
 
-[node name="Fundo" type="TextureRect" parent="." unique_id=1573159752]
-offset_right = 455.0
-offset_bottom = 256.0
-scale = Vector2(0.96489865, 0.99472505)
-texture = ExtResource("1_18dpl")
+[node name="Fundo" type="Sprite2D" parent="." unique_id=1345947411]
+scale = Vector2(0.99545467, 0.99472505)
+texture = ExtResource("2_o6hi5")
+centered = false
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1548119539]
+position = Vector2(95.00001, 41.000008)
+scale = Vector2(0.71484375, 0.71484375)
+texture = ExtResource("3_qmc8d")
+centered = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D" unique_id=839560653]
+texture = ExtResource("4_x26pc")
+centered = false
 
 [node name="Label" type="Label" parent="." unique_id=970019884]
-offset_left = 87.00001
-offset_top = 129.0
-offset_right = 306.0
-offset_bottom = 152.0
+offset_left = 73.0
+offset_top = 20.000015
+offset_right = 292.0
+offset_bottom = 43.000015
 scale = Vector2(1.2767266, 1.2767266)
 text = "VOCÊ PERDEU ESSA BUDEGA"
 
 [node name="BotãoReiniciar" type="Button" parent="." unique_id=556642598]
-offset_left = 143.0
-offset_top = 166.0
-offset_right = 388.0
-offset_bottom = 197.0
-scale = Vector2(0.759048, 0.759048)
-text = "Tomar açaí e tenta novamente"
+offset_left = 118.0
+offset_top = 67.0
+offset_right = 260.0
+offset_bottom = 121.0
+scale = Vector2(0.5686146, 0.5686146)
+text = "Tomar açaí e 
+tenta novamente"
 
 [node name="BotãoMenu" type="Button" parent="." unique_id=219209658]
-offset_left = 183.0
-offset_top = 196.0
-offset_right = 318.0
-offset_bottom = 227.0
-scale = Vector2(0.74704456, 0.74704456)
+offset_left = 120.00001
+offset_top = 108.0
+offset_right = 255.0
+offset_bottom = 139.0
+scale = Vector2(0.58646023, 0.58646023)
 text = "Voltar pro menu"
 
-[node name="Secretaria" parent="." unique_id=1352217106 instance=ExtResource("3_glpug")]
-position = Vector2(64.00001, 145.00002)
-scale = Vector2(1.7316881, 1.7316881)
+[node name="AudioGameOver" type="AudioStreamPlayer2D" parent="." unique_id=1096916106]
+stream = ExtResource("4_vpsjw")
+bus = &"gameOver"
+
+[node name="clique" type="AudioStreamPlayer2D" parent="." unique_id=522190269]
+stream = ExtResource("5_m7y8o")
+bus = &"clique"
+
+[node name="TextoMotivo" type="Label" parent="." unique_id=1264126662]
+modulate = Color(0, 0, 0, 1)
+offset_left = 211.0
+offset_top = 55.000004
+offset_right = 444.8832
+offset_bottom = 130.0
+scale = Vector2(0.41473693, 0.41473693)
+horizontal_alignment = 1
+autowrap_mode = 3
 
 [connection signal="pressed" from="BotãoReiniciar" to="." method="_on_botão_reiniciar_pressed"]
 [connection signal="pressed" from="BotãoMenu" to="." method="_on_botão_menu_pressed"]

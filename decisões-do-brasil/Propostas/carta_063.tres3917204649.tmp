@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://c2g7ra3f0dot5"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_ccstw"]
+
+[resource]
+script = ExtResource("1_ccstw")
+id = "063"
+texto_proposta = "Manguezais: Manguezais estão sofrendo pressão da expansão imobiliária."
+texto_opc1 = "Criar reserva protegida."
+opc1_floresta = 20
+opc1_industria = -20
+texto_opc2 = "Uso sustentável controlado."
+opc2_floresta = 10
+opc2_industria = -10
+texto_opc3 = "Liberar para aterro."
+opc3_floresta = -20
+opc3_industria = 20

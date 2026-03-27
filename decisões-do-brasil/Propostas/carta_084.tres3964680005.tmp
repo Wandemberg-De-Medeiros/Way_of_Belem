@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://xanh6t2c307e"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_j0kt2"]
+
+[resource]
+script = ExtResource("1_j0kt2")
+id = "084"
+texto_proposta = "Parceria Privada: Uma grande empresa se oferece para financiar uma obra em troca de publicidade."
+texto_opc1 = "Aceitar com contrapartidas."
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Aceitar parcialmente."
+opc2_industria = 10
+opc2_verba = -10
+texto_opc3 = "Recusar e fazer público."
+opc3_industria = -20
+opc3_verba = 20

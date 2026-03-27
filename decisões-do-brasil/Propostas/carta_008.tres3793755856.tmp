@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://dbjgwmkv1cfdf"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_3sr43"]
+
+[resource]
+script = ExtResource("1_3sr43")
+id = "008"
+texto_proposta = "Estacionamento Público: Falta de vagas no centro comercial."
+texto_opc1 = "Construir garagem subterrânea."
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Ampliar vagas na rua."
+opc2_industria = 10
+opc2_popularidade = -10
+texto_opc3 = "Proibir carros e ampliar calçadas."
+opc3_industria = -20
+opc3_popularidade = 20

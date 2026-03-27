@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cuaptx1btc6xm"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_ab70k"]
+
+[resource]
+script = ExtResource("1_ab70k")
+id = "016"
+texto_proposta = "Limpeza de Praias: Areia das praias urbanas suja."
+texto_opc1 = "Limpeza diária mecanizada."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Limpeza semanal manual."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Campanha de conscientização."
+opc3_verba = 10
+opc3_popularidade = -10

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://byxd7088p0igo"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_br61m"]
+
+[resource]
+script = ExtResource("1_br61m")
+id = "045"
+texto_proposta = "Açaí Exportação: Produtores querem facilidades para exportação."
+texto_opc1 = "Reduzir burocracia e impostos."
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Manter regras com selo de origem."
+opc2_floresta = 10
+opc2_industria = -10
+texto_opc3 = "Aumentar fiscalização."
+opc3_floresta = 20
+opc3_industria = -20

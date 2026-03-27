@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://qir5g61qmqk7"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_dafjs"]
+
+[resource]
+script = ExtResource("1_dafjs")
+id = "094"
+texto_proposta = "Conselhos Participativos: A população exige participar das decisões de gastos."
+texto_opc1 = "Orçamento participativo total."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Conselhos consultivos."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Decisão apenas do prefeito."
+opc3_verba = 10
+opc3_popularidade = -20

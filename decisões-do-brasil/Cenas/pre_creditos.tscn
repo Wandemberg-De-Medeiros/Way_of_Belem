@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://j1bpdfxbcwin"]
+
+[ext_resource type="Texture2D" uid="uid://m4umotm6ctsv" path="res://Sprites/cena de creditos/mesa.png" id="1_mltg0"]
+[ext_resource type="Script" uid="uid://dvnpfyjufmxsw" path="res://scripts/creditos/pasta_fechada.gd" id="2_ao33k"]
+[ext_resource type="Texture2D" uid="uid://c0xdnrqa6nkuy" path="res://Sprites/cena de creditos/pasta_fechada.png" id="2_oqtjw"]
+[ext_resource type="AudioStream" uid="uid://bp0lfb17qqxfo" path="res://audios/intera+º+Áes/paper1.wav" id="4_ao33k"]
+[ext_resource type="Texture2D" uid="uid://dg8au5t0w8hvr" path="res://Sprites/icones/botao_voltar.png" id="5_hr8lu"]
+[ext_resource type="Script" uid="uid://bhe3j0takjuqm" path="res://scripts/creditos/botão_voltar_menu.gd" id="5_ivq6c"]
+[ext_resource type="AudioStream" uid="uid://do55ot27s1g48" path="res://audios/menu/click1.wav" id="7_nu6n5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hr8lu"]
+size = Vector2(102, 136)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ivq6c"]
+size = Vector2(46, 17)
+
+[node name="pre_creditos" type="Node2D" unique_id=1768322506]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1688481856]
+texture = ExtResource("1_mltg0")
+centered = false
+
+[node name="pasta_fechada" type="Area2D" parent="." unique_id=1598241956]
+script = ExtResource("2_ao33k")
+
+[node name="Sprite2D" type="Sprite2D" parent="pasta_fechada" unique_id=561018126]
+position = Vector2(75, 50)
+scale = Vector2(0.72, 0.72)
+texture = ExtResource("2_oqtjw")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pasta_fechada" unique_id=1592157648]
+position = Vector2(241, 130)
+shape = SubResource("RectangleShape2D_hr8lu")
+
+[node name="Label" type="Label" parent="pasta_fechada" unique_id=1459210069]
+self_modulate = Color(0.7714614, 0, 0.102303736, 1)
+offset_left = 212.00002
+offset_top = 173.0
+offset_right = 363.0
+offset_bottom = 196.0
+rotation = -1.1283178
+scale = Vector2(0.6781765, 0.6781765)
+text = "CRÉDITOS DO JOGO"
+
+[node name="AbrirPasta" type="AudioStreamPlayer2D" parent="pasta_fechada" unique_id=1787605324]
+stream = ExtResource("4_ao33k")
+bus = &"paper"
+
+[node name="botão_voltar_menu" type="Area2D" parent="." unique_id=330599632]
+script = ExtResource("5_ivq6c")
+
+[node name="Sprite2D" type="Sprite2D" parent="botão_voltar_menu" unique_id=1609248606]
+position = Vector2(1.0000001, 210)
+scale = Vector2(0.72, 0.72)
+texture = ExtResource("5_hr8lu")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="botão_voltar_menu" unique_id=1480427612]
+position = Vector2(24, 232.5)
+shape = SubResource("RectangleShape2D_ivq6c")
+
+[node name="clique" type="AudioStreamPlayer2D" parent="botão_voltar_menu" unique_id=647720528]
+stream = ExtResource("7_nu6n5")
+bus = &"paper"
+
+[node name="Label" type="Label" parent="botão_voltar_menu" unique_id=1443363199]
+modulate = Color(0, 0, 0, 1)
+offset_left = 8.0
+offset_top = 231.0
+offset_right = 149.0
+offset_bottom = 254.0
+scale = Vector2(0.1801124, 0.1801124)
+text = "VOLTAR AO MENU"
+
+[connection signal="input_event" from="pasta_fechada" to="pasta_fechada" method="_on_input_event"]
+[connection signal="input_event" from="botão_voltar_menu" to="botão_voltar_menu" method="_on_input_event"]

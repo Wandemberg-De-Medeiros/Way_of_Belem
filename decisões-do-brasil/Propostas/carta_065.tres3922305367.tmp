@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://c6rb5foxph2nx"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_tvpkc"]
+
+[resource]
+script = ExtResource("1_tvpkc")
+id = "065"
+texto_proposta = "Reciclagem: A cidade produz uma quantidade quantida de lixo."
+texto_opc1 = "Usina de reciclagem municipal."
+opc1_floresta = 20
+opc1_verba = -20
+texto_opc2 = "Cooperativas de catadores."
+opc2_floresta = 10
+opc2_verba = -10
+texto_opc3 = "Manter lixão atual."
+opc3_floresta = -20
+opc3_verba = 10

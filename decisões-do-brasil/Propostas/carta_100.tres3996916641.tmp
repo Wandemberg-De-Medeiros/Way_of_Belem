@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://bme2ivm5230um"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_c5mig"]
+
+[resource]
+script = ExtResource("1_c5mig")
+id = "100"
+texto_proposta = "Legado Financeiro: Como organizar as contas do governo?"
+texto_opc1 = "Superávit rigoroso."
+opc1_verba = 20
+opc1_popularidade = -20
+texto_opc2 = "Equilíbrio contábil."
+opc2_verba = 10
+opc2_popularidade = -10
+texto_opc3 = "Investir tudo."
+opc3_verba = -20
+opc3_popularidade = 20

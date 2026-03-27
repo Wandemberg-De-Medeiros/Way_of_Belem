@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://jaqjd4dlwwp0"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_n6a4w"]
+
+[resource]
+script = ExtResource("1_n6a4w")
+id = "017"
+texto_proposta = "Teleférico Urbano: Proposta de ligar morros ao centro."
+texto_opc1 = "Construir sistema completo."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Estudo de viabilidade."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Recusar projeto caro."
+opc3_verba = 10
+opc3_popularidade = -10

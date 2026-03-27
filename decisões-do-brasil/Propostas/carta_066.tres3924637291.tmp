@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://dbcbddjwojr0x"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_1o37q"]
+
+[resource]
+script = ExtResource("1_1o37q")
+id = "066"
+texto_proposta = "Poluição do Ar: A qualidade do ar piora com o trânsito intenso."
+texto_opc1 = "Restringir veículos antigos."
+opc1_floresta = 20
+opc1_industria = -20
+texto_opc2 = "Incentivar transporte público."
+opc2_floresta = 10
+opc2_verba = -20
+texto_opc3 = "Não intervir."
+opc3_floresta = -20
+opc3_industria = 10

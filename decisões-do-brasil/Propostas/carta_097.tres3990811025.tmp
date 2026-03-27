@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://1g6p1lu0v4fo"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_ug2eb"]
+
+[resource]
+script = ExtResource("1_ug2eb")
+id = "097"
+texto_proposta = "Rateio de Custos: A cidade está arcando sozinha com serviços usados por toda a região metropolitana."
+texto_opc1 = "Cobrar das cidades vizinhas."
+opc1_industria = -20
+opc1_verba = 20
+texto_opc2 = "Dividir custos igualmente."
+opc2_industria = -10
+opc2_verba = 10
+texto_opc3 = "Belém paga tudo."
+opc3_industria = 10
+opc3_verba = -20

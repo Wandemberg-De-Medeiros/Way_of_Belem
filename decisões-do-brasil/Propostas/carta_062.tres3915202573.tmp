@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cwr05mywuh4g3"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_5rmia"]
+
+[resource]
+script = ExtResource("1_5rmia")
+id = "062"
+texto_proposta = "Parque Urbano: Uma área verde pode virar um parque público ou um empreendimento."
+texto_opc1 = "Transformar em parque público."
+opc1_floresta = 20
+opc1_industria = -20
+texto_opc2 = "Parque com área comercial."
+opc2_floresta = 10
+opc2_industria = -10
+texto_opc3 = "Liberar para construção."
+opc3_floresta = -20
+opc3_industria = 20

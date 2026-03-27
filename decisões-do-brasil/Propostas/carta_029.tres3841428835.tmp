@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cbjqghy4bo0ki"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_2dym7"]
+
+[resource]
+script = ExtResource("1_2dym7")
+id = "029"
+texto_proposta = "Idosos e Acessibilidade: A cidade não é acessível para idosos."
+texto_opc1 = "Adaptar toda a cidade."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Adaptar prédios públicos."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Manter padrão atual."
+opc3_verba = 10
+opc3_popularidade = -20

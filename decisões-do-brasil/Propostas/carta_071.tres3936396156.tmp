@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://ccb01t38cfq4q"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_ahvb0"]
+
+[resource]
+script = ExtResource("1_ahvb0")
+id = "071"
+texto_proposta = "Resíduo Sólido: Uma grande quantidade de lixo industrial está acumulada."
+texto_opc1 = "Tratamento especializado."
+opc1_floresta = 20
+opc1_verba = -20
+texto_opc2 = "Aterro controlado."
+opc2_floresta = 10
+opc2_verba = -10
+texto_opc3 = "Descarte simples."
+opc3_floresta = -20
+opc3_verba = 10

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://uyrkyi5xf6cv"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_d231j"]
+
+[resource]
+script = ExtResource("1_d231j")
+id = "014"
+texto_proposta = "Monumentos Históricos: Estátuas e prédios antigos degradados."
+texto_opc1 = "Restauro completo de todos."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Restaurar apenas os principais."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Deixar como marca do tempo."
+opc3_verba = 10
+opc3_popularidade = -10

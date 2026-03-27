@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://bovltlgjq0djg"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_3jfhq"]
+
+[resource]
+script = ExtResource("1_3jfhq")
+id = "055"
+texto_proposta = "Multas Ambientais: Indústrias pedem o fim de multas pesadas."
+texto_opc1 = "Acabar com multas."
+opc1_floresta = -20
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Reduzir valor das multas."
+opc2_floresta = -10
+opc2_industria = 10
+opc2_verba = -10
+texto_opc3 = "Aumentar fiscalização."
+opc3_floresta = 20
+opc3_industria = -20
+opc3_verba = 20

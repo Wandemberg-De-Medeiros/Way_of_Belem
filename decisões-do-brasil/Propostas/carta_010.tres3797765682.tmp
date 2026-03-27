@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://db53h05nkauqd"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_n3j6a"]
+
+[resource]
+script = ExtResource("1_n3j6a")
+id = "010"
+texto_proposta = "Wi-Fi Público: Demanda por internet gratuita em praças."
+texto_opc1 = "Wi-Fi livre em toda a cidade."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Wi-Fi apenas no centro turístico."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Não implementar."
+opc3_verba = 10
+opc3_popularidade = -10

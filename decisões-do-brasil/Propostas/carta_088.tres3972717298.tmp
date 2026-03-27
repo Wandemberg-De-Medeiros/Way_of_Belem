@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://beqvq41gqhdqa"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_sqbi3"]
+
+[resource]
+script = ExtResource("1_sqbi3")
+id = "088"
+texto_proposta = "Licitações: Surgiram denúncias graves de irregularidades em contratos antigos."
+texto_opc1 = "Auditoria externa completa."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Investigação interna."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Ignorar denúncias."
+opc3_verba = 10
+opc3_popularidade = -20

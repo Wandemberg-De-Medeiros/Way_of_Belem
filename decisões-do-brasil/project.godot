@@ -17,6 +17,10 @@ boot_splash/bg_color=Color(0.9372549, 0.92941177, 0.88235295, 1)
 boot_splash/show_image=false
 config/icon="uid://b256a88r3xnqe"
 
+[audio]
+
+buses/default_bus_layout="uid://bcv24xw6ust4l"
+
 [autoload]
 
 GameManager="*uid://bmw63f6xep0mj"

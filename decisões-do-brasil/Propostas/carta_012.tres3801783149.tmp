@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cpvabaukogbcd"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_whj4c"]
+
+[resource]
+script = ExtResource("1_whj4c")
+id = "012"
+texto_proposta = "Revitalização do Porto: Estrutura portuária envelhecida."
+texto_opc1 = "Modernização total tecnológica."
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Reparos estruturais básicos."
+opc2_industria = 10
+opc2_verba = -10
+texto_opc3 = "Manter operação atual."
+opc3_industria = -10
+opc3_verba = 10

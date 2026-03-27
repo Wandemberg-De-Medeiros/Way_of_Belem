@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://clbrcqcppdypv"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_12utj"]
+
+[resource]
+script = ExtResource("1_12utj")
+id = "021"
+texto_proposta = "Círio de Nazaré: A maior festa religiosa precisa de estrutura e suporte."
+texto_opc1 = "Investir pesado em segurança."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Apoio logístico básico."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Cortar verba da festa."
+opc3_verba = 10
+opc3_popularidade = -20

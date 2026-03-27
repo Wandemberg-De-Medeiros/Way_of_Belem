@@ -1,0 +1,250 @@
+[gd_scene format=3 uid="uid://bsdxrickkbujq"]
+
+[ext_resource type="Texture2D" uid="uid://m4umotm6ctsv" path="res://Sprites/cena de creditos/mesa.png" id="1_a3en7"]
+[ext_resource type="Texture2D" uid="uid://daeyvgkbckxla" path="res://Sprites/cena de creditos/pasta_aberta.png" id="2_0ep0f"]
+[ext_resource type="Script" uid="uid://br8d0uo5yh83u" path="res://scripts/creditos/papel_creditos.gd" id="3_0ep0f"]
+[ext_resource type="Texture2D" uid="uid://dbrr5eu25lcay" path="res://Sprites/cena de creditos/folha.png" id="3_y3t63"]
+[ext_resource type="Script" uid="uid://bhe3j0takjuqm" path="res://scripts/creditos/botão_voltar_menu.gd" id="5_576tj"]
+[ext_resource type="Texture2D" uid="uid://dg8au5t0w8hvr" path="res://Sprites/icones/botao_voltar.png" id="6_a1qbs"]
+[ext_resource type="AudioStream" uid="uid://do55ot27s1g48" path="res://audios/menu/click1.wav" id="7_pagur"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3t63"]
+size = Vector2(141.63821, 181.90787)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ep0f"]
+size = Vector2(141.63821, 181.90787)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a3en7"]
+size = Vector2(141.63821, 183.29648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ivq6c"]
+size = Vector2(45, 8)
+
+[node name="Creditos" type="Node2D" unique_id=1749844153]
+
+[node name="mesa" type="Sprite2D" parent="." unique_id=1603795125]
+texture = ExtResource("1_a3en7")
+centered = false
+
+[node name="pasta" type="Sprite2D" parent="." unique_id=140674987]
+position = Vector2(75, 50)
+scale = Vector2(0.72014475, 0.72014475)
+texture = ExtResource("2_0ep0f")
+centered = false
+
+[node name="Label" type="Label" parent="pasta" unique_id=1621280528]
+modulate = Color(0.7670247, 2.5268644e-06, 9.62615e-07, 1)
+offset_left = 31.938019
+offset_top = 151.35846
+offset_right = 165.93802
+offset_bottom = 174.35846
+rotation = -0.91815233
+text = "Arraste os papeis"
+
+[node name="docSomEdocumentacao" type="Area2D" parent="." unique_id=459838338]
+position = Vector2(31, 41)
+scale = Vector2(0.72014475, 0.72014475)
+script = ExtResource("3_0ep0f")
+
+[node name="papel" type="Sprite2D" parent="docSomEdocumentacao" unique_id=1252900530]
+position = Vector2(61, 13)
+texture = ExtResource("3_y3t63")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="docSomEdocumentacao" unique_id=1272739271]
+position = Vector2(292.99667, 124.28058)
+shape = SubResource("RectangleShape2D_y3t63")
+
+[node name="texto" type="Node2D" parent="docSomEdocumentacao" unique_id=1424866920]
+
+[node name="docs" type="Label" parent="docSomEdocumentacao/texto" unique_id=1200675764]
+modulate = Color(0, 0, 0, 1)
+offset_left = 224.95479
+offset_top = 34.715244
+offset_right = 487.95477
+offset_bottom = 57.715244
+scale = Vector2(0.50682676, 0.5206414)
+text = "Documentação e Redação Técnica
+
+Nilson Nascimento"
+horizontal_alignment = 1
+
+[node name="som" type="Label" parent="docSomEdocumentacao/texto" unique_id=1789268653]
+modulate = Color(0, 0, 0, 1)
+offset_left = 224.95477
+offset_top = 90.25963
+offset_right = 480.99768
+offset_bottom = 194.27705
+scale = Vector2(0.5206414, 0.5206414)
+text = "Design de Som e Composição
+
+Eshiley Dias Fontes"
+horizontal_alignment = 1
+
+[node name="gerencia" type="Label" parent="docSomEdocumentacao/texto" unique_id=1980894066]
+modulate = Color(0, 0, 0, 1)
+offset_left = 226.34338
+offset_top = 145.80402
+offset_right = 482.3863
+offset_bottom = 249.82144
+scale = Vector2(0.5206414, 0.5206414)
+text = "Direção e Gestão de Projeto
+
+Wandemberg Gabriel 
+Sousa de Medeiros"
+horizontal_alignment = 1
+
+[node name="docProgramacao" type="Area2D" parent="." unique_id=1617283799]
+position = Vector2(31, 41)
+scale = Vector2(0.72014475, 0.72014475)
+script = ExtResource("3_0ep0f")
+
+[node name="papel" type="Sprite2D" parent="docProgramacao" unique_id=1212356901]
+position = Vector2(61, 13)
+texture = ExtResource("3_y3t63")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="docProgramacao" unique_id=919499688]
+position = Vector2(292.99667, 124.28058)
+shape = SubResource("RectangleShape2D_y3t63")
+
+[node name="texto" type="Node2D" parent="docProgramacao" unique_id=1738305214]
+
+[node name="nome" type="Label" parent="docProgramacao/texto" unique_id=221233359]
+modulate = Color(0, 0, 0, 1)
+offset_left = 224.95479
+offset_top = 34.715244
+offset_right = 475.66345
+offset_bottom = 58.321606
+scale = Vector2(0.5206414, 0.5206414)
+text = "Programação e Engenharia"
+horizontal_alignment = 1
+
+[node name="pessoas" type="Label" parent="docProgramacao/texto" unique_id=310880656]
+modulate = Color(0, 0, 0, 1)
+offset_left = 224.95477
+offset_top = 65.264656
+offset_right = 480.99768
+offset_bottom = 307.972
+scale = Vector2(0.5206414, 0.5206414)
+text = "Wandemberg Gabriel 
+Sousa de Medeiros
+
+João Oberlim 
+Lira Martins "
+horizontal_alignment = 1
+
+[node name="docArteVisual" type="Area2D" parent="." unique_id=1961410545]
+position = Vector2(31, 41)
+scale = Vector2(0.72014475, 0.72014475)
+script = ExtResource("3_0ep0f")
+
+[node name="papel" type="Sprite2D" parent="docArteVisual" unique_id=567420424]
+position = Vector2(61, 13)
+texture = ExtResource("3_y3t63")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="docArteVisual" unique_id=559348414]
+position = Vector2(292.99667, 124.28058)
+shape = SubResource("RectangleShape2D_0ep0f")
+
+[node name="texto" type="Node2D" parent="docArteVisual" unique_id=1740481693]
+
+[node name="nome" type="Label" parent="docArteVisual/texto" unique_id=117717070]
+modulate = Color(0, 0, 0, 1)
+offset_left = 224.95479
+offset_top = 34.715244
+offset_right = 475.66345
+offset_bottom = 58.321606
+scale = Vector2(0.5206414, 0.5206414)
+text = "Arte e Visual"
+horizontal_alignment = 1
+
+[node name="pessoas" type="Label" parent="docArteVisual/texto" unique_id=1879599024]
+modulate = Color(0, 0, 0, 1)
+offset_left = 224.95477
+offset_top = 65.264656
+offset_right = 480.99768
+offset_bottom = 307.972
+scale = Vector2(0.5206414, 0.5206414)
+text = "Arthur Ferreira Marques
+
+Wandemberg Gabriel 
+Sousa de Medeiros
+
+João Oberlim 
+Lira Martins 
+
+Germano Pedro 
+Minami Rodrigues"
+horizontal_alignment = 1
+
+[node name="docGameDesigner" type="Area2D" parent="." unique_id=435517462]
+position = Vector2(31, 41)
+rotation = -0.0020881929
+scale = Vector2(0.7201447, 0.7201447)
+script = ExtResource("3_0ep0f")
+
+[node name="papel" type="Sprite2D" parent="docGameDesigner" unique_id=1153276202]
+position = Vector2(61, 13)
+texture = ExtResource("3_y3t63")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="docGameDesigner" unique_id=1912153797]
+position = Vector2(292.99667, 123.58627)
+shape = SubResource("RectangleShape2D_a3en7")
+
+[node name="texto" type="Node2D" parent="docGameDesigner" unique_id=293169836]
+
+[node name="nome" type="Label" parent="docGameDesigner/texto" unique_id=780847739]
+modulate = Color(0, 0, 0, 1)
+offset_left = 224.95479
+offset_top = 34.715244
+offset_right = 476.2657
+offset_bottom = 58.321606
+scale = Vector2(0.5206414, 0.5206414)
+text = "GameDesigner
+"
+horizontal_alignment = 1
+
+[node name="pessoas" type="Label" parent="docGameDesigner/texto" unique_id=878969077]
+modulate = Color(0, 0, 0, 1)
+offset_left = 224.8209
+offset_top = 65.14759
+offset_right = 502.8711
+offset_bottom = 146.10379
+scale = Vector2(0.47328284, 0.47328284)
+text = "Germano Pedro 
+Minami Rodrigues
+
+Pedro Armando 
+Melo da Silva"
+horizontal_alignment = 1
+
+[node name="botão_voltar_menu" type="Area2D" parent="." unique_id=1600366139]
+script = ExtResource("5_576tj")
+
+[node name="Sprite2D" type="Sprite2D" parent="botão_voltar_menu" unique_id=1258476811]
+position = Vector2(1.0000001, 210)
+scale = Vector2(0.72, 0.72)
+texture = ExtResource("6_a1qbs")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="botão_voltar_menu" unique_id=1772302449]
+position = Vector2(23.5, 233)
+shape = SubResource("RectangleShape2D_ivq6c")
+
+[node name="clique" type="AudioStreamPlayer2D" parent="botão_voltar_menu" unique_id=157767589]
+stream = ExtResource("7_pagur")
+bus = &"paper"
+
+[node name="Label" type="Label" parent="botão_voltar_menu" unique_id=1081378383]
+modulate = Color(0, 0, 0, 1)
+offset_left = 8.0
+offset_top = 231.0
+offset_right = 149.0
+offset_bottom = 254.0
+scale = Vector2(0.1801124, 0.1801124)
+text = "VOLTAR AO MENU"
+
+[connection signal="input_event" from="botão_voltar_menu" to="botão_voltar_menu" method="_on_input_event"]

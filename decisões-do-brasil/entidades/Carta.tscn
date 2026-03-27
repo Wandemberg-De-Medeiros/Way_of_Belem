@@ -4,9 +4,11 @@
 [ext_resource type="LabelSettings" uid="uid://bdwir5yl2a0fu" path="res://entidades/config_texto_carta.tres" id="2_f3lc6"]
 [ext_resource type="Texture2D" uid="uid://byh0fwg6wgnk3" path="res://Sprites/Carta/carta1.png" id="3_kks8w"]
 [ext_resource type="Script" uid="uid://vy2urbmwow43" path="res://scripts/opção_1.gd" id="4_kks8w"]
+[ext_resource type="AudioStream" uid="uid://bp0lfb17qqxfo" path="res://audios/intera+º+Áes/paper1.wav" id="4_pm5ai"]
 [ext_resource type="Script" uid="uid://c4p3ivhcouo24" path="res://scripts/opção_2.gd" id="5_ns5m3"]
 [ext_resource type="Script" uid="uid://cfdgvimc7q58k" path="res://scripts/opção_3.gd" id="6_yw1um"]
 [ext_resource type="Texture2D" uid="uid://cwdybdqmyue3c" path="res://Sprites/Carta/botao.png" id="7_ns5m3"]
+[ext_resource type="AudioStream" uid="uid://dvfuef8oks232" path="res://audios/intera+º+Áes/stamp.wav" id="8_yw1um"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fp73s"]
 size = Vector2(20, 28.293419)
@@ -61,7 +63,11 @@ autowrap_trim_flags = 0
 justification_flags = 171
 metadata/_edit_use_anchors_ = true
 
-[node name="opção_1" type="Node" parent="." unique_id=1727177174]
+[node name="paper" type="AudioStreamPlayer2D" parent="Area2D" unique_id=1287700828]
+stream = ExtResource("4_pm5ai")
+bus = &"paper"
+
+[node name="opção_1" type="Node2D" parent="." unique_id=158812863]
 
 [node name="Area2D" type="Area2D" parent="opção_1" unique_id=1797703044]
 z_index = 2
@@ -90,7 +96,13 @@ z_index = 1
 position = Vector2(18, 4)
 shape = SubResource("RectangleShape2D_ns5m3")
 
-[node name="opção_2" type="Node" parent="." unique_id=1649608807]
+[node name="audio_clique1" type="AudioStreamPlayer2D" parent="opção_1/Area2D" unique_id=444205155]
+position = Vector2(-203, -148)
+stream = ExtResource("8_yw1um")
+volume_db = 12.0
+bus = &"stamp"
+
+[node name="opção_2" type="Node2D" parent="." unique_id=1175575340]
 
 [node name="Area2D" type="Area2D" parent="opção_2" unique_id=643721426]
 z_index = 2
@@ -119,7 +131,13 @@ position = Vector2(-7, 3)
 shape = SubResource("RectangleShape2D_yw1um")
 debug_color = Color(0.47025776, 0.59202534, 1.92523e-07, 0.41960785)
 
-[node name="opção_3" type="Node" parent="." unique_id=1819125818]
+[node name="audio_clique2" type="AudioStreamPlayer2D" parent="opção_2/Area2D" unique_id=350618280]
+position = Vector2(-228, -166)
+stream = ExtResource("8_yw1um")
+volume_db = 12.0
+bus = &"stamp"
+
+[node name="opção_3" type="Node2D" parent="." unique_id=2006323126]
 
 [node name="Area2D" type="Area2D" parent="opção_3" unique_id=1688897228]
 z_index = 2
@@ -146,3 +164,9 @@ visible = false
 position = Vector2(7, 5)
 shape = SubResource("RectangleShape2D_kks8w")
 debug_color = Color(0.975148, 0.15956768, 0, 0.41960785)
+
+[node name="audio_clique3" type="AudioStreamPlayer2D" parent="opção_3/Area2D" unique_id=751321470]
+position = Vector2(-214, -181)
+stream = ExtResource("8_yw1um")
+volume_db = 12.0
+bus = &"stamp"

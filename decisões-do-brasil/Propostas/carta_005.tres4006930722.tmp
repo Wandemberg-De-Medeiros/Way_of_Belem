@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cgf3npcd2daww"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_uivrk"]
+
+[resource]
+script = ExtResource("1_uivrk")
+id = "005"
+texto_proposta = "Saneamento Básico: Esgoto a céu aberto em área densa."
+texto_opc1 = "Rede completa de esgoto tratado."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Solução temporária com fossas sépticas."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Adiar por falta de verba."
+opc3_verba = 10
+opc3_popularidade = -20

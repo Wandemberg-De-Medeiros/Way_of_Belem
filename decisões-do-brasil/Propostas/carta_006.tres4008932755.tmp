@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://q08la8bbb6n8"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_cp5rh"]
+
+[resource]
+script = ExtResource("1_cp5rh")
+id = "006"
+texto_proposta = "Terminal de Ônibus: O terminal central está superlotado."
+texto_opc1 = "Construir novo terminal moderno."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Reformar e expandir o existente."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Manter como está."
+opc3_verba = 10
+opc3_popularidade = -10

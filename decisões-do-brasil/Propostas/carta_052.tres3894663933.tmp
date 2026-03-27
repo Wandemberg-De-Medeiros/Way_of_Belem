@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cqv5jld1r4bbi"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_0n1vc"]
+
+[resource]
+script = ExtResource("1_0n1vc")
+id = "052"
+texto_proposta = "Burocracia: Empresas pedem menos papelada."
+texto_opc1 = "Cortar 50% das exigências."
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Digitalizar processos."
+opc2_industria = 10
+opc2_verba = -10
+texto_opc3 = "Manter regras rígidas."
+opc3_industria = -20
+opc3_verba = 20

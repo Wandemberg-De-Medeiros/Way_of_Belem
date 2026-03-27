@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://ddejd8uur2gvs"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_5l3pb"]
+
+[resource]
+script = ExtResource("1_5l3pb")
+id = "002"
+texto_proposta = "Iluminação da Avenida Nazaré: A principal avenida precisa de novo sistema de luzes."
+texto_opc1 = "LEDs modernos e econômicos."
+opc1_verba = -20
+opc1_popularidade = 10
+texto_opc2 = "Lâmpadas tradicionais históricas."
+opc2_verba = -10
+opc2_popularidade = 20
+texto_opc3 = "Manter sistema atual."
+opc3_verba = 10
+opc3_popularidade = -10

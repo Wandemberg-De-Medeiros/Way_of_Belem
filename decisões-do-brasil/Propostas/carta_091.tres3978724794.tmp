@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://b4fcm5wqwuqqa"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_evnb8"]
+
+[resource]
+script = ExtResource("1_evnb8")
+id = "091"
+texto_proposta = "Fundo de Reserva: Criar um fundo de emergência para crises futuras."
+texto_opc1 = "Alocar 20% do orçamento."
+opc1_verba = 20
+opc1_popularidade = -20
+texto_opc2 = "Alocar 5% do orçamento."
+opc2_verba = 10
+opc2_popularidade = -10
+texto_opc3 = "Não criar fundo."
+opc3_verba = -20
+opc3_popularidade = 10

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://bfgtoypgnbh6q"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_5tepw"]
+
+[resource]
+script = ExtResource("1_5tepw")
+id = "003"
+texto_proposta = "Asfaltamento de Ruas: Bairros periféricos exigem pavimentação."
+texto_opc1 = "Asfalto completo em todas as ruas."
+opc1_floresta = -20
+opc1_popularidade = 20
+texto_opc2 = "Pavimentação ecológica com drenagem."
+opc2_floresta = -10
+opc2_popularidade = 10
+texto_opc3 = "Manter terra batida para preservar solo."
+opc3_floresta = 10
+opc3_popularidade = -20

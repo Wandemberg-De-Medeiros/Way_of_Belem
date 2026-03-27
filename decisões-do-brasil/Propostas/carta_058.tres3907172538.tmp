@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://bg5x3aosp3kje"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_cfv6o"]
+
+[resource]
+script = ExtResource("1_cfv6o")
+id = "058"
+texto_proposta = "Publicidade em Ônibus: Vender espaço publicitário na frota municipal."
+texto_opc1 = "Liberar anúncios em toda a frota."
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Liberar apenas atrás dos ônibus."
+opc2_industria = 10
+opc2_verba = -10
+texto_opc3 = "Proibir publicidade externa."
+opc3_industria = -20
+opc3_verba = 20

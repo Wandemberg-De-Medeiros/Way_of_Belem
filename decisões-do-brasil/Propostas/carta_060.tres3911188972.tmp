@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://2xepth6a3njr"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_7wwv0"]
+
+[resource]
+script = ExtResource("1_7wwv0")
+id = "060"
+texto_proposta = "Crédito Imobiliário: Construtoras pedem facilitação para novas obras."
+texto_opc1 = "Reduzir taxas para construção."
+opc1_industria = 20
+opc1_verba = -20
+texto_opc2 = "Manter taxas atuais."
+opc2_industria = -10
+opc2_verba = 10
+texto_opc3 = "Aumentar taxas para frear obras."
+opc3_floresta = 10
+opc3_industria = -20

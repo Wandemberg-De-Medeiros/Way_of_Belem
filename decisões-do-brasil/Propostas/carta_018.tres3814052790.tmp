@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://bkbhyigmji4o7"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_xwu2j"]
+
+[resource]
+script = ExtResource("1_xwu2j")
+id = "018"
+texto_proposta = "Sinalização de Trânsito: Placas apagadas e confusas."
+texto_opc1 = "Trocar toda a sinalização."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Repor apenas as principais."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Manter até quebrar."
+opc3_verba = 10
+opc3_popularidade = -10

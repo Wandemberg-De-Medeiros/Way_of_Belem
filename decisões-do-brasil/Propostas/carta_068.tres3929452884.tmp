@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://crq15mvjgfavh"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_e0mrw"]
+
+[resource]
+script = ExtResource("1_e0mrw")
+id = "068"
+texto_proposta = "Povos Originários: Comunidades indígenas exigem reconhecimento."
+texto_opc1 = "Criar centro cultural indígena."
+opc1_floresta = 20
+opc1_verba = -20
+texto_opc2 = "Apoio a eventos culturais."
+opc2_floresta = 10
+opc2_verba = -10
+texto_opc3 = "Ignorar demandas."
+opc3_floresta = -20
+opc3_verba = 10

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b1yga8dk0tvwx"]
 
 [ext_resource type="Script" uid="uid://bgsehc2tcgu4u" path="res://scripts/splash_screen.gd" id="1_el3v4"]
-[ext_resource type="Texture2D" uid="uid://bbo04m5d2h0fx" path="res://guará_moon.png" id="1_ty3ja"]
+[ext_resource type="Texture2D" uid="uid://krd2wqua2r6m" path="res://guará_moon_sem_fundo.png" id="2_76lsv"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_el3v4"]
 
@@ -85,7 +85,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_ty3ja")
+texture = ExtResource("2_76lsv")
 expand_mode = 1
 stretch_mode = 5
 

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://x3vkbhdb5o35"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_488ak"]
+
+[resource]
+script = ExtResource("1_488ak")
+id = "059"
+texto_proposta = "Feiras Livres: Camelôs e feirantes informais estão ocupando todas as calçadas."
+texto_opc1 = "Legalizar e organizar."
+opc1_industria = 20
+opc1_popularidade = -10
+texto_opc2 = "Remover totalmente."
+opc2_industria = -20
+opc2_popularidade = 20
+texto_opc3 = "Ignorar situação."
+opc3_industria = 10
+opc3_popularidade = -10

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://dy1q3m02pkows"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_lp2rv"]
+
+[resource]
+script = ExtResource("1_lp2rv")
+id = "025"
+texto_proposta = "Carimbó Patrimônio: A dança tradicional precisa de incentivo oficial."
+texto_opc1 = "Financiamento profissional."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Apoio em escolas."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Sem verba específica."
+opc3_verba = 10
+opc3_popularidade = -10

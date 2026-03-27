@@ -8,6 +8,40 @@ extends Node2D
 @onready var area_opc2 = get_node_or_null("../opção_2/Area2D")
 @onready var area_opc3 = get_node_or_null("../opção_3/Area2D")
 
+@onready var pos_original = self.position
+var baixada: bool = false
+
+
+
+func alternar_posicao():
+	# Define quanto vamos deslocar (positivo desce, negativo sobe)
+	var deslocamento = 450 if not baixada else -450
+	baixada = !baixada
+	
+	var tween = create_tween().set_parallel(true).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
+	
+	# 1. Move a Area2D da própria carta (o self)
+	tween.tween_property(self, "position:y", self.position.y + deslocamento, 0.5)
+	
+	# 2. Move os nós das opções (que agora são Node2D)
+	# Usamos get_parent() porque area_opc1 é a Area2D, e o pai dela é o nó 'opção_1'
+	if area_opc1:
+		var pai1 = area_opc1.get_parent()
+		tween.tween_property(pai1, "position:y", pai1.position.y + deslocamento, 0.5)
+		area_opc1.input_pickable = !baixada
+
+	if area_opc2:
+		var pai2 = area_opc2.get_parent()
+		tween.tween_property(pai2, "position:y", pai2.position.y + deslocamento, 0.5)
+		area_opc2.input_pickable = !baixada
+
+	if area_opc3:
+		var pai3 = area_opc3.get_parent()
+		tween.tween_property(pai3, "position:y", pai3.position.y + deslocamento, 0.5)
+		area_opc3.input_pickable = !baixada
+
+
+
 func configurar(dados: Proposta):
 	# 1. Proteção: Se não houver dados, não faz nada
 	if dados == null: 
@@ -50,6 +84,14 @@ func _ao_escolher_opcao(impactos: Dictionary):
 	)
 	
 	animar_saida()
+	if area_opc1: area_opc1.animar_saida_opcao()
+	if area_opc2: area_opc2.animar_saida_opcao()
+	if area_opc3: area_opc3.animar_saida_opcao()
+	tocar_musica()
+	
+
+func tocar_musica():
+	$paper.play()
 
 func animar_saida():
 	# Verifica se o pai ainda existe para evitar erro ao deletar

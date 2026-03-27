@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cqjf86iyn1qmo" path="res://Sprites/Mesa_pra_montar/Gaveta_pro_clashroyale.png" id="1_ituk1"]
 [ext_resource type="Script" uid="uid://bhv6w22uc52i6" path="res://scripts/menu/Gaveta_Direita.gd" id="1_yxl6w"]
+[ext_resource type="AudioStream" uid="uid://do55ot27s1g48" path="res://audios/menu/click1.wav" id="3_pi15x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yxl6w"]
 size = Vector2(123, 108)
@@ -18,14 +19,36 @@ texture = ExtResource("1_ituk1")
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1162251865]
+visible = false
 position = Vector2(369.5, 196)
 shape = SubResource("RectangleShape2D_yxl6w")
 
 [node name="Botao_Sair" type="Area2D" parent="." unique_id=1122751138]
 
 [node name="CollisionShape_Celular" type="CollisionShape2D" parent="Botao_Sair" unique_id=1170351882]
+visible = false
 position = Vector2(368, 164)
 shape = SubResource("RectangleShape2D_pi15x")
 debug_color = Color(0.18003303, 0.6432267, 3.85046e-07, 0.41960785)
+
+[node name="clique" type="AudioStreamPlayer2D" parent="Botao_Sair" unique_id=1571771276]
+stream = ExtResource("3_pi15x")
+bus = &"clique"
+
+[node name="clique" type="AudioStreamPlayer2D" parent="." unique_id=895441093]
+stream = ExtResource("3_pi15x")
+bus = &"clique"
+
+[node name="Label" type="Label" parent="." unique_id=981096965]
+modulate = Color(0.23419034, 0.23180702, 0.49185842, 1)
+offset_left = 350.0
+offset_top = 160.0
+offset_right = 390.0
+offset_bottom = 183.0
+rotation = -0.370138
+scale = Vector2(0.7397989, 0.7397989)
+text = "Sair"
+horizontal_alignment = 1
+autowrap_mode = 3
 
 [connection signal="input_event" from="Botao_Sair" to="." method="_on_botao_sair_input_event"]

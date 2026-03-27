@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://llnxvopbjyv8"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_xmvvp"]
+
+[resource]
+script = ExtResource("1_xmvvp")
+id = "024"
+texto_proposta = "Museu da Amazônia: Proposta de criação de um novo museu cultural."
+texto_opc1 = "Museu grande internacional."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Centro cultural simples."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Cancelar projeto."
+opc3_verba = 10
+opc3_popularidade = -20

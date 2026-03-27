@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://cnkqjpce66etb"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_epjo4"]
+
+[resource]
+script = ExtResource("1_epjo4")
+id = "039"
+texto_proposta = "Eventos Esportivos: A cidade foi cotada como sede de um campeonato."
+texto_opc1 = "Investir em arenas."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Usar estruturas existentes."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Recusar sede."
+opc3_verba = 10
+opc3_popularidade = -20

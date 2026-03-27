@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Proposta" format=3 uid="uid://chgdo5gsu3q7"]
+
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="1_dlvoe"]
+
+[resource]
+script = ExtResource("1_dlvoe")
+id = "031"
+texto_proposta = "Biblioteca Pública: O acervo municipal está desatualizado."
+texto_opc1 = "Comprar milhares de livros."
+opc1_verba = -20
+opc1_popularidade = 20
+texto_opc2 = "Doações incentivadas."
+opc2_verba = -10
+opc2_popularidade = 10
+texto_opc3 = "Manter acervo atual."
+opc3_verba = 10
+opc3_popularidade = -10
