@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bdm174can4ons"]
 
-[ext_resource type="Texture2D" uid="uid://doyfwkdjiip03" path="res://Sprites/EscritorioDoPlayerWIP.png" id="1_jnx6k"]
 [ext_resource type="Script" uid="uid://b42isjksbcsxw" path="res://scripts/menu/Menu_Inicial.gd" id="1_kv5c6"]
+[ext_resource type="Texture2D" uid="uid://bnojku1nrjcos" path="res://Sprites/pré_escritorio2.png" id="2_iad27"]
 [ext_resource type="Texture2D" uid="uid://dd8y7kwuevguv" path="res://Sprites/Mesa_pra_montar/SomenteMesa.png" id="3_upap4"]
 [ext_resource type="Texture2D" uid="uid://5uhfmwscqokc" path="res://Sprites/Mesa_pra_montar/1_PastaPrincipal.png" id="4_kv5c6"]
 [ext_resource type="PackedScene" uid="uid://dbbdulc8x4nrq" path="res://entidades/GavetaEsquerda.tscn" id="5_k8qbq"]
@@ -9,6 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://c3lxyix4l63by" path="res://Sprites/Mesa_pra_montar/3_Interfone.png" id="6_0cjcu"]
 [ext_resource type="PackedScene" uid="uid://bjjubss32xawc" path="res://entidades/Gaveta_Direita.tscn" id="6_upap4"]
 [ext_resource type="AudioStream" uid="uid://do55ot27s1g48" path="res://audios/menu/click1.wav" id="9_0cjcu"]
+[ext_resource type="Script" uid="uid://bi4blsiqdt1h8" path="res://scripts/menu/ambiente_control.gd" id="9_wyfih"]
+[ext_resource type="Script" uid="uid://dkomehy8wuh3y" path="res://scripts/menu/fullscreen_control.gd" id="10_smg3p"]
+[ext_resource type="AudioStream" uid="uid://csrtxicggj4ia" path="res://audios/ambiente/somewhere-sunny-by-kevin-macleod.mp3" id="11_smg3p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mq57u"]
 size = Vector2(137, 70.5)
@@ -23,8 +26,9 @@ size = Vector2(68, 52)
 script = ExtResource("1_kv5c6")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=955026174]
-scale = Vector2(0.965, 1)
-texture = ExtResource("1_jnx6k")
+position = Vector2(-5.9999995, -3)
+scale = Vector2(0.48239064, 0.4813433)
+texture = ExtResource("2_iad27")
 centered = false
 
 [node name="Sprite_mesa" type="Sprite2D" parent="." unique_id=1864472827]
@@ -128,6 +132,54 @@ text = "Sair"
 
 [node name="GavetaDireita" parent="." unique_id=1941700184 instance=ExtResource("6_upap4")]
 
+[node name="options" type="Panel" parent="." unique_id=627463227]
+z_index = 1
+offset_left = 130.0
+offset_top = 66.0
+offset_right = 302.0
+offset_bottom = 176.0
+
+[node name="Label" type="Label" parent="options" unique_id=1180594898]
+layout_mode = 0
+offset_right = 171.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Configurações"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="options" unique_id=1767833504]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 87.0
+offset_right = 132.0
+offset_bottom = 118.0
+scale = Vector2(0.7442647, 0.7442647)
+theme_override_font_sizes/font_size = 15
+text = "Sair"
+
+[node name="AmbienteControl" type="HSlider" parent="options" unique_id=2039665222]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 36.0
+offset_right = 248.2346
+offset_bottom = 52.0
+scale = Vector2(0.64766127, 0.64766127)
+max_value = 1.0
+step = 0.05
+value = 0.5
+script = ExtResource("9_wyfih")
+audio_bus_name = "ambiente"
+
+[node name="FullscreenControl" type="CheckButton" parent="options" unique_id=1408456880]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 51.0
+offset_right = 154.0
+offset_bottom = 82.0
+theme_override_font_sizes/font_size = 12
+text = "Fullscreen"
+script = ExtResource("10_smg3p")
+
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=270542142]
 
 [node name="SplashScreen" type="ColorRect" parent="CanvasLayer" unique_id=1491433449]
@@ -142,6 +194,14 @@ color = Color(0.9372549, 0.92941177, 0.88235295, 1)
 stream = ExtResource("9_0cjcu")
 bus = &"clique"
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=647412612]
+stream = ExtResource("11_smg3p")
+autoplay = true
+bus = &"ambiente"
+
 [connection signal="input_event" from="Botao_PastaPrincipal" to="." method="_on_botao_pasta_principal_input_event"]
 [connection signal="input_event" from="Botao_Cafe" to="." method="_on_botao_cafe_input_event"]
 [connection signal="input_event" from="Botao_Interfone" to="." method="_on_botao_interfone_input_event"]
+[connection signal="pressed" from="options/Button" to="." method="_on_button_pressed"]
+[connection signal="value_changed" from="options/AmbienteControl" to="options/AmbienteControl" method="_on_value_changed"]
+[connection signal="toggled" from="options/FullscreenControl" to="options/FullscreenControl" method="_on_toggled"]

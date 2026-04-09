@@ -1,10 +1,12 @@
 extends Node2D
 
 @onready var splash = $CanvasLayer/SplashScreen
+@onready var options: Panel = $options
 
 func _ready():
 	# 1. Configurar Splash Screen
 	iniciar_splash()
+	options.visible = false
 	
 
 func iniciar_splash():
@@ -42,7 +44,11 @@ func _on_botao_cafe_input_event(_viewport: Node, event: InputEvent, _shape_idx: 
 		print("Abrindo Conquistas...")
 
 func _on_botao_interfone_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
-	if event is InputEventMouseButton and event.pressed:
+	if event is InputEventMouseButton and event.pressed: 
 		tocar_musica()
-		await get_tree().create_timer(0.1).timeout
-		print("Abrindo Configurações...")
+		options.visible = true
+
+
+func _on_button_pressed() -> void:
+	tocar_musica()
+	options.visible = false

@@ -15,7 +15,7 @@ var popularidade: int = 70
 var contador_cartas: int = 0
 const meta_vitoria: int = 48
 
-func aplicar_mudancas(f: int, i: int, v: int, p: int):
+func aplicar_mudancas(f: int, i: int, v: int, p: int, ignorar_contagem: bool = false):
 	# 1. Aplicamos a soma PRIMEIRO
 	floresta += f
 	industria += i
@@ -23,7 +23,8 @@ func aplicar_mudancas(f: int, i: int, v: int, p: int):
 	popularidade += p
 	
 	# 2. Incrementamos o contador de cartas
-	contador_cartas += 1
+	if not ignorar_contagem:
+		contador_cartas += 1
 	
 	# 3. Emitimos o sinal para a UI (ícones) atualizar ANTES do Game Over
 	status_atualizado.emit()
@@ -77,6 +78,8 @@ func terminar_jogo(texto, vitoria):
 	print("FIM DE JOGO: ", texto)
 	mensagem_final = texto
 	jogo_encerrado.emit()
+	
+	await get_tree().create_timer(0.2).timeout
 	
 	var caminho_cena = "res://Cenas/vitoria.tscn" if vitoria else "res://Cenas/game_over.tscn"
 	

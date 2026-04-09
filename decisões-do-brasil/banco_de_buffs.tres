@@ -1,0 +1,417 @@
+[gd_resource type="Resource" script_class="ListaBuff" format=3 uid="uid://7tfl25o4s8tc"]
+
+[ext_resource type="Script" uid="uid://0p75or5ongke" path="res://scripts/lsita_buff_rescursos.gd" id="1_uuct0"]
+[ext_resource type="Script" uid="uid://b26dytxplx7te" path="res://scripts/Proposta.gd" id="2_nfvhu"]
+
+[sub_resource type="Resource" id="Resource_uuct0"]
+script = ExtResource("2_nfvhu")
+id = "101"
+texto_proposta = "Verba Federal Extra: O Governo Federal libera um fundo emergencial para a capital."
+texto_opc1 = "Verba (+20) "
+opc1_verba = 20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_nfvhu"]
+script = ExtResource("2_nfvhu")
+id = "102"
+texto_proposta = "Boom do Açaí: Safra recorde e alta demanda internacional elevam os lucros. "
+texto_opc1 = "Indústria (+20) "
+opc1_industria = 20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_dpkmf"]
+script = ExtResource("2_nfvhu")
+id = "103"
+texto_proposta = "Prêmio Cultural: Belém ganha título internacional de Capital Cultural da Amazônia."
+texto_opc1 = "Popularidade (+20)"
+opc1_popularidade = 20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_p3du5"]
+script = ExtResource("2_nfvhu")
+id = "104"
+texto_proposta = "Eficiência na Arrecadação: A implementação de um novo sistema fiscal reduz drasticamente a 
+sonegação. "
+texto_opc1 = "Verba (+20)"
+opc1_verba = 20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_0bm77"]
+script = ExtResource("2_nfvhu")
+id = "105"
+texto_proposta = "Turismo de Cruzeiros: Temporada alta no porto com lotação máxima de turistas estrangeiros."
+texto_opc1 = "Indústria (+10)"
+opc1_industria = 10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_2le3i"]
+script = ExtResource("2_nfvhu")
+id = "106"
+texto_proposta = "Doação de Ônibus: O Governo do Estado doa uma nova frota de transporte coletivo para a 
+prefeitura."
+texto_opc1 = "Popularidade (+10) "
+opc1_popularidade = 10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_xyojw"]
+script = ExtResource("2_nfvhu")
+id = "107"
+texto_proposta = "Recuperação de Igarapé: Um projeto piloto de despoluição e dragagem apresenta resultados 
+surpreendentes. "
+texto_opc1 = "Floresta (+20) "
+opc1_floresta = 20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_hdgyv"]
+script = ExtResource("2_nfvhu")
+id = "108"
+texto_proposta = "Investimento em Tech: Uma gigante da tecnologia abre sede na cidade, gerando empregos 
+qualificados. "
+texto_opc1 = " Indústria (+20)"
+opc1_industria = 20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_hr275"]
+script = ExtResource("2_nfvhu")
+id = "109"
+texto_proposta = "Festival Internacional: Um grande evento cultural atrai mídia positiva e melhora a autoestima da 
+cidade."
+texto_opc1 = "Popularidade (+10) "
+opc1_popularidade = 10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_8htoy"]
+script = ExtResource("2_nfvhu")
+id = "110"
+texto_proposta = "Isenção de Dívida: O Estado perdoa parte da dívida histórica municipal após renegociação."
+texto_opc1 = "Verba (+20) "
+opc1_verba = 20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_m351l"]
+script = ExtResource("2_nfvhu")
+id = "111"
+texto_proposta = "Pesca Sustentável: A criação de um selo verde valoriza o pescado local no mercado externo."
+texto_opc1 = "Floresta (+10) "
+opc1_floresta = 20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_0cgw4"]
+script = ExtResource("2_nfvhu")
+id = "112"
+texto_proposta = "Voluntariado em Massa: A população se mobiliza em um mutirão histórico para limpeza de praças."
+texto_opc1 = "Popularidade (+10) "
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_kv4vt"]
+script = ExtResource("2_nfvhu")
+id = "113"
+texto_proposta = "Energia Renovável: A nova usina solar municipal reduz drasticamente a conta de luz pública."
+texto_opc1 = "Verba (+10) "
+opc1_verba = 10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_aqjbc"]
+script = ExtResource("2_nfvhu")
+id = "114"
+texto_proposta = " Reconhecimento Indígena: Programas de valorização e demarcação fortalecem a identidade local. "
+texto_opc1 = "Floresta (+10) "
+opc1_floresta = 10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_45ebx"]
+script = ExtResource("2_nfvhu")
+id = "115"
+texto_proposta = " Exportação Recorde: O Porto de Belém opera acima da capacidade com eficiência máxima."
+texto_opc1 = "Indústria (+20)"
+opc1_industria = 20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_dygdy"]
+script = ExtResource("2_nfvhu")
+id = "116"
+texto_proposta = "Patrocínio Privado: Uma grande empresa adota a manutenção de diversas praças públicas."
+texto_opc1 = "Popularidade (+10) "
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_ni1qy"]
+script = ExtResource("2_nfvhu")
+id = "117"
+texto_proposta = "Safra de Castanha: Alta produção extrativista sustentável fortalece as comunidades."
+texto_opc1 = "Floresta (+10) "
+opc1_floresta = 10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_16g6a"]
+script = ExtResource("2_nfvhu")
+id = "118"
+texto_proposta = "Concurso Público: A contratação de novos servidores essenciais melhora o atendimento 
+público. "
+texto_opc1 = "Popularidade (+10)"
+opc1_popularidade = 10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_ubsge"]
+script = ExtResource("2_nfvhu")
+id = "119"
+texto_proposta = "Tecnologia de Monitoramento: Nova Inteligência Artificial ajuda a prever e mitigar danos de enchentes. "
+texto_opc1 = "Floresta (+10) "
+opc1_floresta = 10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_4yeqs"]
+script = ExtResource("2_nfvhu")
+id = "120"
+texto_proposta = " Feira de Negócios: Rodadas de investimento externo trazem novos parceiros para a cidade."
+texto_opc1 = " Indústria (+10) "
+opc1_industria = 10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_lnwdf"]
+script = ExtResource("2_nfvhu")
+id = "121"
+texto_proposta = "Campanha de Vacinação: A saúde pública atinge uma meta histórica de cobertura vacinal."
+texto_opc1 = "Popularidae (+20)"
+opc1_popularidade = 20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_x68vf"]
+script = ExtResource("2_nfvhu")
+id = "122"
+texto_proposta = "Reflorestamento Urbano: Milhares de árvores nativas são plantadas em áreas degradadas por ONGs."
+texto_opc1 = "Floresta (+20) "
+opc1_floresta = 20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_5tn52"]
+script = ExtResource("2_nfvhu")
+id = "123"
+texto_proposta = "Redução de Criminalidade: Os índices de violência urbana caem drasticamente neste período."
+texto_opc1 = "Popularidade (+20)"
+opc1_popularidade = 20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_iqblu"]
+script = ExtResource("2_nfvhu")
+id = "124"
+texto_proposta = "Superávit Orçamentário: Gestão eficiente resulta em sobra de recursos no fechamento do semestre."
+texto_opc1 = "Verba (+20) "
+opc1_verba = 20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_u1r54"]
+script = ExtResource("2_nfvhu")
+id = "125"
+texto_proposta = "Legado Positivo: Pesquisas de aprovação da gestão atingem seu pico histórico."
+texto_opc1 = "Popularidade (+10)"
+opc1_popularidade = 10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_ckoyf"]
+script = ExtResource("2_nfvhu")
+id = "126"
+texto_proposta = "Enchente Histórica: Chuvas fortes e maré alta alagam áreas baixas da cidade."
+texto_opc1 = "Popularidade (-20)"
+opc1_popularidade = -20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_bnfap"]
+script = ExtResource("2_nfvhu")
+id = "127"
+texto_proposta = "Greve Geral: Servidores municipais e o transporte público param totalmente."
+texto_opc1 = "Popularidade (-20)"
+opc1_popularidade = -20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_bhsmt"]
+script = ExtResource("2_nfvhu")
+id = "128"
+texto_proposta = "Escândalo de Corrupção: Um esquema de desvio de verba em gestões passadas (ou atual) é 
+descoberto. "
+texto_opc1 = "Verba (-20) "
+opc1_verba = -20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_sqg04"]
+script = ExtResource("2_nfvhu")
+id = "129"
+texto_proposta = "Acidente Industrial: Vazamento de resíduos químicos na zona industrial contamina solo."
+texto_opc1 = "Indústria (-20) "
+opc1_industria = -20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_t6p85"]
+script = ExtResource("2_nfvhu")
+id = "130"
+texto_proposta = "Seca Extrema: O nível dos rios baixa criticamente, afetando o abastecimento."
+texto_opc1 = "Floresta (-20)"
+opc1_floresta = -20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_gmfoj"]
+script = ExtResource("2_nfvhu")
+id = "131"
+texto_proposta = "Aumento da Violência: Ondas de assaltos no centro comercial assustam a população."
+texto_opc1 = "Popularidade (-20)"
+opc1_popularidade = -20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_erom2"]
+script = ExtResource("2_nfvhu")
+id = "132"
+texto_proposta = "Colapso no Lixo: O aterro sanitário principal é interditado por problemas ambientais."
+texto_opc1 = "Floresta (-10) "
+opc1_floresta = -10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_h6e1j"]
+script = ExtResource("2_nfvhu")
+id = "133"
+texto_proposta = "Fuga de Capitais: Insegurança econômica faz grandes empresas mudarem suas sedes."
+texto_opc1 = "Indústria (-20)"
+opc1_industria = -20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_26spl"]
+script = ExtResource("2_nfvhu")
+id = "134"
+texto_proposta = "Epidemia Local: Surto de doença transmitida por água contaminada sobrecarrega hospitais."
+texto_opc1 = "Popularidade (-20)"
+opc1_popularidade = -20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_n2ix7"]
+script = ExtResource("2_nfvhu")
+id = "135"
+texto_proposta = "Desmatamento Ilegal: Focos de queimadas criminosas são detectados na região metropolitana."
+texto_opc1 = "Floresta (-20)"
+opc1_floresta = -20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_n0kl4"]
+script = ExtResource("2_nfvhu")
+id = "136"
+texto_proposta = "Acidente no Porto: Navio de grande porte encalha e bloqueia a logística da baía."
+texto_opc1 = "Indústria (-10)"
+opc1_industria = -10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_ovtft"]
+script = ExtResource("2_nfvhu")
+id = "137"
+texto_proposta = "Crise Energética: Apagões frequentes em toda a cidade por falhas na rede de distribuição."
+texto_opc1 = "Indústria (-10) "
+opc1_industria = -10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_d1kuo"]
+script = ExtResource("2_nfvhu")
+id = "138"
+texto_proposta = "Erosão de Orla: Parte da contenção da avenida principal cede e cai no rio. "
+texto_opc1 = "Verba (-20)"
+opc1_verba = -20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_sq640"]
+script = ExtResource("2_nfvhu")
+id = "139"
+texto_proposta = "Praga Urbana: Infestação de insetos compromete árvores em áreas verdes históricas."
+texto_opc1 = "Floresta (-10) "
+opc1_floresta = -10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_v7w3t"]
+script = ExtResource("2_nfvhu")
+id = "140"
+texto_proposta = "Protesto Violento: Manifestação popular termina em conflito e quebra-quebra no centro."
+texto_opc1 = "Popularidade (-10)"
+opc1_popularidade = -10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_ihmgi"]
+script = ExtResource("2_nfvhu")
+id = "141"
+texto_proposta = "Multa Internacional: O município sofre sanção pesada por descumprimento de metas 
+ambientais. "
+texto_opc1 = "Verba (-20) "
+opc1_verba = -20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_37jmd"]
+script = ExtResource("2_nfvhu")
+id = "142"
+texto_proposta = "Falência de Construtora: A empresa responsável por uma obra pública vital declara falência."
+texto_opc1 = "Verba (-10) "
+opc1_verba = -10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_unwys"]
+script = ExtResource("2_nfvhu")
+id = "143"
+texto_proposta = "Colapso no Transporte: Falta de manutenção faz com que grande parte da frota quebre ao mesmo 
+tempo. "
+texto_opc1 = "Popularide (-10)"
+opc1_popularidade = -10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_isaup"]
+script = ExtResource("2_nfvhu")
+id = "144"
+texto_proposta = " Invasão de Área: Ocupação irregular em massa em área de preservação e risco."
+texto_opc1 = "Floresta (-10) "
+opc1_floresta = -10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_y8o6g"]
+script = ExtResource("2_nfvhu")
+id = "145"
+texto_proposta = "Vazamento de Esgoto: Uma tubulação mestre rompe, despejando dejetos diretamente na baía."
+texto_opc1 = "Floresta (-20) "
+opc1_floresta = -20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_ff8k1"]
+script = ExtResource("2_nfvhu")
+id = "146"
+texto_proposta = " Aumento da Inflação: O custo de vida e o preço dos alimentos sobem drasticamente."
+texto_opc1 = "Popularide (-10)"
+opc1_popularidade = -10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_pllj7"]
+script = ExtResource("2_nfvhu")
+id = "147"
+texto_proposta = "Tempestade Tropical : Ventos de alta velocidade derrubam postes e árvores por toda a cidade."
+texto_opc1 = " Verba (-10) "
+opc1_verba = -10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_exlhh"]
+script = ExtResource("2_nfvhu")
+id = "148"
+texto_proposta = "Crise na Saúde: Falta de repasses deixa hospitais sem leitos básicos ou medicamentos."
+texto_opc1 = "Popularidade (-20)"
+opc1_popularidade = -20
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_2u7db"]
+script = ExtResource("2_nfvhu")
+id = "149"
+texto_proposta = "Embargo de Obras: A Justiça paralisa as construções principais da prefeitura por 
+irregularidades. "
+texto_opc1 = "Indústria (-10) "
+opc1_industria = -10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[sub_resource type="Resource" id="Resource_b6yg2"]
+script = ExtResource("2_nfvhu")
+id = "150"
+texto_proposta = "Tempo de eleição: O período eleitoral gera incertezas e gastos imprevistos"
+texto_opc1 = "Verba (-10)"
+opc1_verba = -10
+metadata/_custom_type_script = "uid://b26dytxplx7te"
+
+[resource]
+script = ExtResource("1_uuct0")
+todos_os_buffs = Array[ExtResource("2_nfvhu")]([SubResource("Resource_uuct0"), SubResource("Resource_nfvhu"), SubResource("Resource_dpkmf"), SubResource("Resource_p3du5"), SubResource("Resource_0bm77"), SubResource("Resource_2le3i"), SubResource("Resource_xyojw"), SubResource("Resource_hdgyv"), SubResource("Resource_hr275"), SubResource("Resource_8htoy"), SubResource("Resource_m351l"), SubResource("Resource_0cgw4"), SubResource("Resource_kv4vt"), SubResource("Resource_aqjbc"), SubResource("Resource_45ebx"), SubResource("Resource_dygdy"), SubResource("Resource_ni1qy"), SubResource("Resource_16g6a"), SubResource("Resource_ubsge"), SubResource("Resource_4yeqs"), SubResource("Resource_lnwdf"), SubResource("Resource_x68vf"), SubResource("Resource_5tn52"), SubResource("Resource_iqblu"), SubResource("Resource_u1r54"), SubResource("Resource_ckoyf"), SubResource("Resource_bnfap"), SubResource("Resource_bhsmt"), SubResource("Resource_sqg04"), SubResource("Resource_t6p85"), SubResource("Resource_gmfoj"), SubResource("Resource_erom2"), SubResource("Resource_h6e1j"), SubResource("Resource_26spl"), SubResource("Resource_n2ix7"), SubResource("Resource_n0kl4"), SubResource("Resource_ovtft"), SubResource("Resource_d1kuo"), SubResource("Resource_sq640"), SubResource("Resource_v7w3t"), SubResource("Resource_ihmgi"), SubResource("Resource_37jmd"), SubResource("Resource_unwys"), SubResource("Resource_isaup"), SubResource("Resource_y8o6g"), SubResource("Resource_ff8k1"), SubResource("Resource_pllj7"), SubResource("Resource_exlhh"), SubResource("Resource_2u7db"), SubResource("Resource_b6yg2")])
+metadata/_custom_type_script = "uid://0p75or5ongke"

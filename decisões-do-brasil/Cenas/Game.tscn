@@ -2,9 +2,14 @@
 
 [ext_resource type="Script" uid="uid://dvsfbqivbqgru" path="res://scripts/MainScene.gd" id="1_d5ttk"]
 [ext_resource type="PackedScene" uid="uid://25x4pwlevf6g" path="res://entidades/secretaria.tscn" id="2_cht1d"]
-[ext_resource type="Texture2D" uid="uid://bnojku1nrjcos" path="res://Sprites/pré_escritorio2.png" id="3_rdjek"]
+[ext_resource type="Texture2D" uid="uid://cy5q1jw3l2by6" path="res://Sprites/EscritorioDoPlayerV2/EscritorioDoPlayerV2.png" id="2_ul8aj"]
+[ext_resource type="Texture2D" uid="uid://oyv1ssinh54g" path="res://Sprites/EscritorioDoPlayerV2/MesaVersaoIngame.png" id="3_mwdct"]
+[ext_resource type="Texture2D" uid="uid://dosrem2s13ujr" path="res://Sprites/EscritorioDoPlayerV2/MaquinaDeEscrever.png" id="4_v8kix"]
+[ext_resource type="Texture2D" uid="uid://cptio3jekfxhj" path="res://Sprites/EscritorioDoPlayerV2/EfeitoLuzLampada.png" id="5_0v5vh"]
 [ext_resource type="PackedScene" uid="uid://bj3ptpegsjmm6" path="res://entidades/icone_industria.tscn" id="6_8i4ha"]
 [ext_resource type="PackedScene" uid="uid://c1lhx7ufb0jfd" path="res://entidades/icone_floresta.tscn" id="6_cvv8b"]
+[ext_resource type="Texture2D" uid="uid://c8pyx582xdhov" path="res://Sprites/EscritorioDoPlayerV2/PortaAbrindo.png" id="6_jd1s2"]
+[ext_resource type="Script" uid="uid://b8pj4c1wu6yon" path="res://scripts/porta.gd" id="6_mwdct"]
 [ext_resource type="PackedScene" uid="uid://begk6tgomf3ow" path="res://entidades/moon.tscn" id="6_rdjek"]
 [ext_resource type="Script" uid="uid://bebqcb0fmskm8" path="res://scripts/interface_status.gd" id="6_uspeq"]
 [ext_resource type="PackedScene" uid="uid://begvi3v6tqhrn" path="res://entidades/icone_verba.tscn" id="8_2uwyn"]
@@ -15,6 +20,80 @@
 [ext_resource type="Script" uid="uid://o2j3etntaos" path="res://scripts/fabricaDeCartas.gd" id="13_lx5o4"]
 [ext_resource type="Texture2D" uid="uid://cht21825oji5x" path="res://Sprites/icones/abaixar carta.png" id="14_lt22k"]
 [ext_resource type="AudioStream" uid="uid://do55ot27s1g48" path="res://audios/menu/click1.wav" id="15_848rl"]
+[ext_resource type="Script" uid="uid://bi4blsiqdt1h8" path="res://scripts/menu/ambiente_control.gd" id="16_uhn55"]
+[ext_resource type="Script" uid="uid://dkomehy8wuh3y" path="res://scripts/menu/fullscreen_control.gd" id="17_o6yhb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8kix"]
+atlas = ExtResource("6_jd1s2")
+region = Rect2(0, 768, 455, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0v5vh"]
+atlas = ExtResource("6_jd1s2")
+region = Rect2(0, 512, 455, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jd1s2"]
+atlas = ExtResource("6_jd1s2")
+region = Rect2(0, 256, 455, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4st6"]
+atlas = ExtResource("6_jd1s2")
+region = Rect2(0, 0, 455, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c7avj"]
+atlas = ExtResource("6_jd1s2")
+region = Rect2(0, 0, 455, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vah4a"]
+atlas = ExtResource("6_jd1s2")
+region = Rect2(0, 256, 455, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4c5j"]
+atlas = ExtResource("6_jd1s2")
+region = Rect2(0, 512, 455, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpq8d"]
+atlas = ExtResource("6_jd1s2")
+region = Rect2(0, 768, 455, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m4st6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8kix")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0v5vh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jd1s2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m4st6")
+}],
+"loop": false,
+"name": &"close",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c7avj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vah4a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4c5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpq8d")
+}],
+"loop": false,
+"name": &"open",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xohdr"]
+size = Vector2(60.999985, 127.00011)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uhn55"]
 size = Vector2(20.730957, 20)
@@ -23,30 +102,57 @@ size = Vector2(20.730957, 20)
 scale = Vector2(0.96474093, 0.99386597)
 script = ExtResource("1_d5ttk")
 
+[node name="elementos_do_escritorio" type="Node" parent="." unique_id=953691125]
+
+[node name="Sprite2D" type="Sprite2D" parent="elementos_do_escritorio" unique_id=1971454169]
+scale = Vector2(0.96474093, 0.99386597)
+texture = ExtResource("2_ul8aj")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="elementos_do_escritorio" unique_id=1360888644]
+z_index = 3
+scale = Vector2(0.96474093, 0.99386597)
+texture = ExtResource("3_mwdct")
+centered = false
+
+[node name="Sprite2D3" type="Sprite2D" parent="elementos_do_escritorio" unique_id=850451605]
+scale = Vector2(0.96474093, 0.99386597)
+texture = ExtResource("4_v8kix")
+centered = false
+
+[node name="Sprite2D4" type="Sprite2D" parent="elementos_do_escritorio" unique_id=115620826]
+scale = Vector2(0.96474093, 0.99386597)
+texture = ExtResource("5_0v5vh")
+centered = false
+
+[node name="porta" type="Area2D" parent="elementos_do_escritorio" unique_id=2112040872]
+scale = Vector2(0.96474093, 0.99386597)
+script = ExtResource("6_mwdct")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="elementos_do_escritorio/porta" unique_id=969697558]
+z_index = 2
+position = Vector2(223.89429, 127.78382)
+scale = Vector2(1.0365477, 1.0061718)
+sprite_frames = SubResource("SpriteFrames_m4st6")
+animation = &"open"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="elementos_do_escritorio/porta" unique_id=1176163354]
+z_index = 2
+position = Vector2(327.03076, 144.38562)
+scale = Vector2(1.0365472, 1.0061712)
+shape = SubResource("RectangleShape2D_xohdr")
+
 [node name="icones" type="Node" parent="." unique_id=1345826110]
 
 [node name="icone_config" parent="icones" unique_id=827921854 instance=ExtResource("10_uspeq")]
 z_index = 1
 position = Vector2(422, 16)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1971454169]
-position = Vector2(-7.2558327, -4.0246873)
-scale = Vector2(0.5000209, 0.5012087)
-texture = ExtResource("3_rdjek")
-centered = false
-
 [node name="fabrica" type="Node" parent="." unique_id=1818185511]
 script = ExtResource("13_lx5o4")
 
-[node name="Secretaria" parent="." unique_id=1352217106 instance=ExtResource("2_cht1d")]
-position = Vector2(324.43942, 149.91957)
-scale = Vector2(0.9999999, 0.9999999)
-
-[node name="Moon" parent="." unique_id=1448648304 instance=ExtResource("6_rdjek")]
-position = Vector2(72.558334, 208.27759)
-scale = Vector2(0.99999994, 0.99999994)
-
 [node name="InterfaceStatus" type="HBoxContainer" parent="." unique_id=1419972381]
+z_index = 2
 anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
@@ -84,7 +190,8 @@ volume_db = 12.114
 bus = &"ambiente"
 
 [node name="botao_abaixar_carta" type="Area2D" parent="." unique_id=1021882816]
-position = Vector2(394.92468, 231.41953)
+z_index = 1
+position = Vector2(91.2162, 246.51212)
 script = ExtResource("13_lt22k")
 
 [node name="Sprite2D" type="Sprite2D" parent="botao_abaixar_carta" unique_id=138084966]
@@ -101,4 +208,161 @@ shape = SubResource("RectangleShape2D_uhn55")
 stream = ExtResource("15_848rl")
 bus = &"clique"
 
+[node name="options" type="Panel" parent="." unique_id=1978655574]
+visible = false
+z_index = 3
+offset_left = 130.0
+offset_top = 66.0
+offset_right = 302.0
+offset_bottom = 176.0
+
+[node name="Label" type="Label" parent="options" unique_id=957033926]
+layout_mode = 0
+offset_right = 171.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Configurações"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="options" unique_id=1245568705]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 87.0
+offset_right = 132.0
+offset_bottom = 118.0
+scale = Vector2(0.7442647, 0.7442647)
+theme_override_font_sizes/font_size = 15
+text = "Sair"
+
+[node name="AmbienteControl" type="HSlider" parent="options" unique_id=197868209]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 36.0
+offset_right = 248.2346
+offset_bottom = 52.0
+scale = Vector2(0.64766127, 0.64766127)
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("16_uhn55")
+audio_bus_name = "ambiente"
+
+[node name="FullscreenControl" type="CheckButton" parent="options" unique_id=1008074501]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 51.0
+offset_right = 154.0
+offset_bottom = 82.0
+theme_override_font_sizes/font_size = 12
+text = "Fullscreen"
+script = ExtResource("17_o6yhb")
+
+[node name="Secretaria" parent="." unique_id=1352217106 instance=ExtResource("2_cht1d")]
+z_index = 1
+position = Vector2(324.43942, 149.91954)
+scale = Vector2(0.99999976, 0.99999976)
+
+[node name="Moon" parent="." unique_id=1448648304 instance=ExtResource("6_rdjek")]
+z_index = 1
+position = Vector2(389.74188, 229.40717)
+scale = Vector2(0.9999998, 0.9999998)
+
+[node name="PanelMoon" type="Panel" parent="." unique_id=309405853]
+visible = false
+z_index = 3
+offset_left = 145.11668
+offset_top = 85.52461
+offset_right = 311.1167
+offset_bottom = 193.52461
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="PanelMoon" unique_id=1964150152]
+layout_mode = 0
+offset_right = 165.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 8
+text = "Essa é a Moon, nosso Lobo-guará de estimação"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="PanelSecretaria" type="Panel" parent="." unique_id=1055048651]
+visible = false
+z_index = 3
+offset_left = 145.11668
+offset_top = 85.52461
+offset_right = 311.1167
+offset_bottom = 193.52461
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="PanelSecretaria" unique_id=1912322608]
+layout_mode = 0
+offset_right = 165.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 8
+text = "Secretaria Socorro: 
+Gostaria de ler o tutorial"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="sim" type="Button" parent="PanelSecretaria" unique_id=1317458948]
+layout_mode = 0
+offset_left = 10.3654785
+offset_top = 66.40734
+offset_right = 46.36548
+offset_bottom = 97.40734
+text = "sim"
+
+[node name="não" type="Button" parent="PanelSecretaria" unique_id=395878987]
+layout_mode = 0
+offset_left = 108.83751
+offset_top = 67.413506
+offset_right = 146.83751
+offset_bottom = 98.413506
+text = "	não"
+
+[node name="PanelTutorial" type="Panel" parent="." unique_id=891027347]
+z_index = 4
+offset_left = 1.03656
+offset_top = 2.012352
+offset_right = 454.00787
+offset_bottom = 256.57382
+
+[node name="Label" type="Label" parent="PanelTutorial" unique_id=1240886257]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.63116187
+anchor_bottom = 0.58158535
+offset_right = 165.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 8
+text = "Bem-vindo, Prefeito! Eu serei sua secretária e vou guiá-lo em seu mandato.\",
+Belém e todo o Pará dependem do seu equilíbrio. Olhe os ícones no topo da tela,eles mostram a saúde da nossa Floresta, Indústria, Verbas e sua Popularidade. Se qualquer um desses chegar a zero ou passar do limite seu governo acaba!
+Cada proposta possui três opções para você tomar sua decisão,
+entre as propostas podem aparece cartas especiais de 'Buff'. Elas podem ajuda-lo ou trazer grandes problemas,
+Agora é com você. O destino da nossa cidade está em suas mãos. Boa sorte!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="sair" type="Button" parent="PanelTutorial" unique_id=732656179]
+layout_mode = 0
+offset_left = 171.03035
+offset_top = 184.12943
+offset_right = 285.03033
+offset_bottom = 215.12943
+text = "voltar ao jogo"
+
+[connection signal="input_event" from="elementos_do_escritorio/porta" to="elementos_do_escritorio/porta" method="_on_input_event"]
+[connection signal="input_event" from="icones/icone_config" to="." method="_on_icone_config_input_event"]
 [connection signal="input_event" from="botao_abaixar_carta" to="botao_abaixar_carta" method="_on_input_event"]
+[connection signal="pressed" from="options/Button" to="." method="_on_button_pressed"]
+[connection signal="value_changed" from="options/AmbienteControl" to="options/AmbienteControl" method="_on_value_changed"]
+[connection signal="toggled" from="options/FullscreenControl" to="options/FullscreenControl" method="_on_toggled"]
+[connection signal="pressed" from="PanelSecretaria/sim" to="." method="_on_sim_pressed"]
+[connection signal="pressed" from="PanelSecretaria/não" to="." method="_on_não_pressed"]
+[connection signal="pressed" from="PanelTutorial/sair" to="." method="_on_sair_pressed"]

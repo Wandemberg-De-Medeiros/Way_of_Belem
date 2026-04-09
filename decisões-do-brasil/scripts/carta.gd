@@ -42,7 +42,7 @@ func alternar_posicao():
 
 
 
-func configurar(dados: Proposta):
+func configurar(dados: Proposta, e_um_buff: bool = false):
 	# 1. Proteção: Se não houver dados, não faz nada
 	if dados == null: 
 		return
@@ -55,6 +55,12 @@ func configurar(dados: Proposta):
 	# 3. Verificamos se cada nó realmente existe antes de atribuir valores
 	if label_proposta:
 		label_proposta.text = dados.texto_proposta
+	
+	if e_um_buff:
+		if area_opc2: area_opc2.get_parent().visible = false
+		if area_opc3: area_opc3.get_parent().visible = false
+		# Guardamos essa info para o GameManager
+		self.set_meta("tipo_buff", true)
 	
 	# Configuramos as opções apenas se os nós foram encontrados
 	if area_opc1:
@@ -76,11 +82,14 @@ func _ao_escolher_opcao(impactos: Dictionary):
 	# Segurança extra: se o GameManager sumir durante o fechamento, não trava
 	if Engine.is_editor_hint(): return
 	
+	var pular_contagem = self.has_meta("tipo_buff")
+	
 	GameManager.aplicar_mudancas(
 		impactos.floresta, 
 		impactos.industria, 
 		impactos.verba, 
-		impactos.popularidade
+		impactos.popularidade,
+		pular_contagem
 	)
 	
 	animar_saida()
